@@ -119,8 +119,13 @@ const eventCards = () => `
     <div class="info"><strong>LOCAL</strong>${EV.place}</div>
   </div>`;
 
-const rsvpButton = (label = "CONFIRMAR PRESENÇA") =>
-  `<a href="#/rsvp" class="button">${label}</a>`;
+const rsvpButton = (label = "CONFIRMAR PRESENÇA") => {
+  const group = getGuestGroup();
+
+  return group
+    ? `<a href="#/rsvp/${group.id}" class="button">${label}</a>`
+    : `<a href="#/rsvp" class="button">${label}</a>`;
+};
 
 const videoButton = () =>
   CONFIG.videoUrl
