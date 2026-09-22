@@ -1,0 +1,459 @@
+/* =========================================================
+   Site estilo Orkut — CSS refinado
+   Mantive todos os nomes de classe do original, então o HTML
+   continua funcionando sem mudanças.
+   ========================================================= */
+
+/* ---------- Variáveis (mude a cor aqui e vale pro site todo) ---------- */
+:root {
+  --page-bg: #d9e8f5;
+  --panel-bg: #f1f5f8;
+  --box-bg: #fff;
+  --box-head-bg: #dce8f5;      /* azulzinho clássico dos títulos de caixa */
+  --border: #c4d0dc;
+  --border-soft: #e1e6eb;
+  --text: #444;
+  --text-strong: #333;
+  --text-muted: #777;
+  --link: #1769a8;
+  --brand: #d85b7a;            /* rosa do logo */
+  --purple: #6b4d86;
+  --purple-soft: #f1edf5;
+  --purple-border: #d7ccdf;
+  --online: #4f9444;
+  --radius: 6px;               /* cantos arredondados: assinatura do Orkut */
+
+  --font-ui: Arial, Helvetica, sans-serif;
+  --font-title: Georgia, "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text);
+  font: 12px/1.45 var(--font-ui);
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+a:focus-visible,
+.button:focus-visible,
+.browser-toolbar button:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* ---------- Moldura do navegador ---------- */
+.browser-frame {
+  width: min(1180px, 96vw);
+  margin: 18px auto;
+  background: var(--box-bg);
+  border: 1px solid #777;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .18);
+  overflow: hidden;
+}
+
+.browser-titlebar {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  background: linear-gradient(#edf4fb, #b9cfe3);
+  border-bottom: 1px solid #7d91a4;
+  color: #234;
+  font-size: 11px;
+}
+
+.browser-toolbar {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 8px;
+  background: #e8e8e8;
+  border-bottom: 1px solid #aaa;
+}
+
+.browser-toolbar button {
+  height: 27px;
+  min-width: 27px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background: linear-gradient(#fdfdfd, #e6e6e6);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.browser-toolbar button:hover { background: #fff; }
+.browser-toolbar button:active { background: #ddd; }
+
+.address-bar {
+  flex: 1;
+  min-width: 0;
+  height: 27px;
+  line-height: 25px;
+  padding: 0 8px;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  color: #555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---------- Cabeçalho do Orkut ---------- */
+.orkut-header {
+  display: grid;
+  grid-template-columns: 115px 1fr auto;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 14px;
+  background: linear-gradient(#f9fbfd, #e6eef6);
+  border-bottom: 1px solid var(--border);
+}
+
+.orkut-logo {
+  display: inline-block;
+  color: var(--brand);
+  font: bold italic 28px var(--font-title);
+  letter-spacing: -2px;
+}
+
+.orkut-logo:hover { text-decoration: none; }
+
+.header-links { display: flex; flex-wrap: wrap; gap: 6px 12px; }
+.header-links a[aria-current="page"] { color: var(--brand); font-weight: bold; }
+.welcome { color: var(--text-muted); }
+
+/* ---------- Layout principal ---------- */
+.orkut-layout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr); /* minmax evita estourar a tela */
+  min-height: 650px;
+}
+
+.sidebar {
+  padding: 12px;
+  background: var(--panel-bg);
+  border-right: 1px solid var(--border);
+}
+
+.profile-card {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.avatar {
+  width: 82px;
+  height: 82px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 7px;
+  overflow: hidden;
+  background: #d8d8e8;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: var(--text-muted);
+  font: bold 38px var(--font-title);
+}
+
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.profile-card h1 {
+  margin: 0 0 2px;
+  color: var(--text-strong);
+  font: bold 18px/1.2 var(--font-title);
+}
+
+.online { margin: 3px 0 7px; color: var(--online); }
+.online::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: var(--online);
+}
+
+/* ---------- Menu lateral ---------- */
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0;
+  background: var(--box-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.side-nav a {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 7px 9px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.side-nav a:last-child { border-bottom: 0; }
+.side-nav a[aria-current="page"] { background: #e8f1f7; font-weight: bold; }
+
+.side-nav a:hover {
+  background: #e8f1f7;
+  text-decoration: none;
+}
+
+.side-nav strong {
+  color: #999;
+  font-weight: normal;
+}
+
+.mini-box {
+  margin-top: 20px;
+  padding: 9px;
+  background: var(--box-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+/* ---------- Conteúdo ---------- */
+.content {
+  padding: 18px 22px 35px;
+  background: var(--box-bg);
+}
+
+.content:focus { outline: none; }
+
+.page-title {
+  margin: 0 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+  color: #555;
+  font: bold 18px/1.25 var(--font-title);
+}
+
+/* Caixa padrão: overflow hidden faz o título respeitar o canto arredondado */
+.box {
+  margin-bottom: 14px;
+  padding: 12px;
+  overflow: hidden;
+  background: #fafafa;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.box-title {
+  margin: -12px -12px 10px;
+  padding: 6px 10px;
+  background: linear-gradient(#e9f1f9, var(--box-head-bg));
+  border-bottom: 1px solid var(--border);
+  color: #3d5a78;
+  font-weight: bold;
+}
+
+/* ---------- Convite ---------- */
+.invite {
+  max-width: 760px;
+  background: var(--box-bg);
+}
+
+.invite h2 {
+  margin: 0 0 10px;
+  color: var(--purple);
+  font: bold 22px/1.2 var(--font-title);
+}
+
+.big-date {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.info {
+  padding: 9px;
+  background: var(--purple-soft);
+  border: 1px solid var(--purple-border);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.info strong { display: block; margin-bottom: 3px; }
+
+/* ---------- Botão ---------- */
+.button {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7a8794;
+  border-radius: 4px;
+  background: linear-gradient(#fff, #dcdcdc);
+  color: #174f78;
+  font: bold 12px var(--font-ui);
+  cursor: pointer;
+}
+
+.button:hover { text-decoration: none; background: linear-gradient(#fff, #ececec); }
+.button.is-disabled { opacity: .6; cursor: not-allowed; }
+.button.is-disabled:hover { background: linear-gradient(#fff, #dcdcdc); }
+.button:disabled { opacity: .6; cursor: wait; }
+
+.button:active { background: #d4d4d4; box-shadow: inset 0 1px 3px rgba(0, 0, 0, .25); }
+
+/* ---------- Recados (scraps) ---------- */
+.scrap {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding: 10px;
+  background: var(--box-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.scrap-avatar {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: #d8d8e8;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: var(--text-muted);
+  font: bold 22px var(--font-title);
+}
+
+.scrap-body { flex: 1; min-width: 0; }
+.scrap-head { display: flex; justify-content: space-between; gap: 8px; }
+.scrap .name { font-weight: bold; color: var(--link); }
+.scrap .date { color: #999; }
+.scrap p { margin: 4px 0 0; }
+
+/* ---------- Grades: fotos, amigos, comunidades ---------- */
+/* auto-fill: a grade se ajusta sozinha ao tamanho da tela */
+.photo-grid, .friend-grid, .community-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.photo, .friend, .community {
+  min-height: 100px;
+  padding: 8px;
+  background: #f5f5f5;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.friend-avatar {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  margin: 4px auto 6px;
+  background: #d8d8e8;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: var(--text-muted);
+  font: bold 26px var(--font-title);
+}
+
+.placeholder-photo {
+  height: 70px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 5px;
+  background: #ddd;
+  border-radius: 3px;
+  color: #888;
+}
+
+/* ---------- Formulário de confirmação ---------- */
+.rsvp-form .form-actions { margin-top: 16px; }
+.rsvp-form label { display: block; margin: 10px 0 3px; font-weight: bold; }
+
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form textarea {
+  width: 100%;
+  max-width: 450px;
+  padding: 7px;
+  border: 1px solid #a9b4bf;
+  border-radius: 3px;
+  background: #fff;
+  color: var(--text-strong);
+  font: inherit;
+}
+
+.rsvp-form input:focus,
+.rsvp-form select:focus,
+.rsvp-form textarea:focus {
+  outline: 2px solid #8fb8dc;
+  outline-offset: 0;
+  border-color: var(--link);
+}
+
+.notice {
+  margin-top: 14px;
+  padding: 10px;
+  background: #f4f1e7;
+  border: 1px solid #d7cfb5;
+  border-radius: var(--radius);
+}
+
+/* ---------- Rodapé ---------- */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px 16px;
+  padding: 9px 14px;
+  background: #f1f1f1;
+  border-top: 1px solid var(--border);
+  color: #888;
+}
+
+/* ---------- Telas pequenas ---------- */
+@media (max-width: 700px) {
+  /* a moldura de navegador só ocupa espaço no celular */
+  .browser-titlebar,
+  .browser-toolbar { display: none; }
+
+  .browser-frame {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .orkut-header { grid-template-columns: 1fr; gap: 6px; }
+  .orkut-layout { grid-template-columns: minmax(0, 1fr); }
+  /* barra lateral compacta: o convite precisa aparecer logo na primeira tela */
+  .sidebar { padding: 10px 12px; border-right: 0; border-bottom: 1px solid var(--border); }
+
+  .profile-card {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    column-gap: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .profile-card .avatar { grid-row: 1 / span 3; width: 48px; height: 48px; margin: 0; font-size: 22px; }
+  .profile-card h1 { font-size: 16px; }
+  .profile-card p { margin: 0; }
+
+  .side-nav { flex-direction: row; overflow-x: auto; margin: 10px 0 0; }
+  .side-nav a { white-space: nowrap; border-bottom: 0; border-right: 1px solid var(--border-soft); }
+  .side-nav a:last-child { border-right: 0; }
+  .mini-box { display: none; }
+  .content { padding: 14px 14px 28px; }
+  .big-date { grid-template-columns: 1fr; }
+}
