@@ -29,7 +29,13 @@ const scraps = [
   { name: "Rose", when: "ontem", text: "Minha filha ❤️" },
 ];
 
-const outfits = ["Patricinha 2000", "Emo", "Popstar", "MSN 2007", "Rockeira", "Y2K"];
+const outfits = [
+  "Y2K / Pop",
+  "Emo / Rock",
+  "Skater",
+  "Casual / Geek 2000s",
+  "Patricinha / Playboy"
+];
 
 const guestGroups = [
   { id: "tia-preta", names: ["Tia Preta", "Tio Nelson", "Alicia", "Lorena", "Victor"] },
@@ -185,16 +191,111 @@ const pages = {
   home: () => `
     <h2 class="page-title">Bem-vindo ao perfil de Bibica</h2>
 
-    <div class="box">
-      <div class="box-title">recado do dia</div>
-      <p><strong>Você tem 30 novos recados.</strong></p>
-      <p>Se você recebeu este convite, é porque faz parte da história.</p>
-      <p><a href="#/testimonials">clique aqui para descobrir o motivo →</a></p>
-    </div>
+    <div class="home-sections">
 
-    <div class="box">
-      <div class="box-title">quem sou eu</div>
-      <p>Uma garota que abriu o MSN em 2007 e, quando percebeu, estava fazendo 30 anos.</p>
+      <div>
+
+        <div class="box">
+          <div class="box-title">recado do dia</div>
+
+          <p>
+            <strong>Você tem 30 novos recados.</strong>
+          </p>
+
+          <p>
+            Se você recebeu este convite, é porque faz parte da história.
+          </p>
+
+          <p>
+            <a href="#/testimonials">
+              clique aqui para descobrir o motivo →
+            </a>
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="box-title">quem sou eu</div>
+
+          <p>
+            Uma garota que abriu o MSN em 2007 e, quando percebeu,
+            estava fazendo 30 anos.
+          </p>
+
+          <p>
+            <strong>estado:</strong> online
+          </p>
+
+          <p>
+            <strong>humor:</strong> comemorando 🎉
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="box-title">o evento</div>
+
+          <p>
+            <strong>${EV.title}</strong>
+          </p>
+
+          ${eventCards()}
+
+          <p>
+            <a href="#/event">ver detalhes do evento →</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div>
+
+        <div class="box">
+          <div class="box-title">meus amigos</div>
+
+          <div class="friend-grid">
+            ${friends
+              .slice(0, 6)
+              .map(
+                (f) =>
+                  `<div class="friend">
+                    <div class="friend-avatar" aria-hidden="true">
+                      ${initial(f)}
+                    </div>
+                    ${f}
+                  </div>`
+              )
+              .join("")}
+          </div>
+
+          <p>
+            <a href="#/friends">ver todos os amigos →</a>
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="box-title">minhas comunidades</div>
+
+          <div class="community-grid">
+            ${communities
+              .slice(0, 4)
+              .map(
+                (c) =>
+                  `<div class="community">
+                    <strong>${c.name}</strong>
+                    <p>${c.members} membros</p>
+                  </div>`
+              )
+              .join("")}
+          </div>
+
+          <p>
+            <a href="#/communities">
+              ver todas as comunidades →
+            </a>
+          </p>
+        </div>
+
+      </div>
+
     </div>`,
 
   profile: () => `
@@ -245,17 +346,340 @@ const pages = {
   photos: () => `
     <h2 class="page-title">Fotos</h2>
 
-    <div class="box">
-      <div class="box-title">álbum: O QUE VESTIR?</div>
+    ${
+      location.hash === "#/photos"
+        ? `
+          <div class="box">
+            <div class="box-title">álbum: O QUE VESTIR? • escolha seu estilo</div>
 
-      <div class="photo-grid">
-        ${outfits
-          .map(
-            (o) =>
-              `<div class="photo"><div class="placeholder-photo">foto Y2K</div>${o}</div>`
-          )
-          .join("")}
-      </div>
+            <div class="photo-grid">
+
+  <a href="#/photos/y2k" class="photo">
+    <div class="placeholder-photo">Y2K / POP</div>
+    Y2K / POP
+  </a>
+
+  <a href="#/photos/emo-rock" class="photo">
+    <div class="placeholder-photo">EMO / ROCK</div>
+    EMO / ROCK
+  </a>
+
+  <a href="#/photos/skater" class="photo">
+    <div class="placeholder-photo">SKATER</div>
+    SKATER
+  </a>
+
+  <a href="#/photos/patricinha-playboy" class="photo">
+    <div class="placeholder-photo">PATRICINHA</div>
+    PATRICINHA / PLAYBOY
+  </a>
+
+  <a href="#/photos/casual-geek" class="photo">
+    <div class="placeholder-photo">CASUAL / GEEK</div>
+    CASUAL / GEEK 2000s
+  </a>
+
+</div>
+              
+                         </div>
+          </div>
+        `
+        : location.hash === "#/photos/y2k"
+        ? `
+          <div class="box">
+            <div class="box-title">álbum: Y2K / POP</div>
+
+            <p>Escolha seu estilo:</p>
+
+            <div class="photo-grid">
+
+              <a href="#/photos/y2k/feminino" class="photo">
+                <div class="placeholder-photo">FEMININO</div>
+                👠 FEMININO
+              </a>
+
+              <a href="#/photos/y2k/masculino" class="photo">
+                <div class="placeholder-photo">MASCULINO</div>
+                👟 MASCULINO
+              </a>
+
+            </div>
+          </div>
+        `
+        : location.hash === "#/photos/y2k/feminino"
+        ? `
+          <div class="box">
+            <div class="box-title">Y2K / POP • FEMININO</div>
+
+            <p>Referências de looks:</p>
+
+            <div class="photo-grid">
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 01</div>
+                LOOK 01
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 02</div>
+                LOOK 02
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 03</div>
+                LOOK 03
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 04</div>
+                LOOK 04
+              </div>
+
+            </div>
+          </div>
+        `
+        : location.hash === "#/photos/emo-rock/feminino"
+        ? `
+          <div class="box">
+            <div class="box-title">EMO / ROCK • FEMININO</div>
+
+            <p>Referências de looks:</p>
+
+            <div class="photo-grid">
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 01</div>
+                LOOK 01
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 02</div>
+                LOOK 02
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 03</div>
+                LOOK 03
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 04</div>
+                LOOK 04
+              </div>
+
+            </div>
+          </div>
+        `
+        : location.hash === "#/photos/y2k/masculino"
+        ? `
+          <div class="box">
+            <div class="box-title">Y2K / POP • MASCULINO</div>
+
+            <p>Referências de looks:</p>
+
+            <div class="photo-grid">
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 01</div>
+                LOOK 01
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 02</div>
+                LOOK 02
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 03</div>
+                LOOK 03
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 04</div>
+                LOOK 04
+              </div>
+
+            </div>
+          </div>
+        `
+        : location.hash === "#/photos/emo-rock/masculino"
+        ? `
+          <div class="box">
+            <div class="box-title">EMO / ROCK • MASCULINO</div>
+
+            <p>Referências de looks:</p>
+
+            <div class="photo-grid">
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 01</div>
+                LOOK 01
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 02</div>
+                LOOK 02
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 03</div>
+                LOOK 03
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 04</div>
+                LOOK 04
+              </div>
+
+            </div>
+          </div>
+        `
+        : location.hash === "#/photos/skater"
+        ? `
+          <div class="box">
+            <div class="box-title">álbum: SKATER</div>
+
+            <p>Escolha seu estilo:</p>
+
+            <div class="photo-grid">
+
+              <a href="#/photos/skater/feminino" class="photo">
+                <div class="placeholder-photo">FEMININO</div>
+                🛹 FEMININO
+              </a>
+
+              <a href="#/photos/skater/masculino" class="photo">
+                <div class="placeholder-photo">MASCULINO</div>
+                🧢 MASCULINO
+              </a>
+
+            </div>
+          </div>
+        `
+        : location.hash === "#/photos/skater/feminino"
+        ? `
+          <div class="box">
+            <div class="box-title">SKATER • FEMININO</div>
+
+            <p>Referências de looks:</p>
+
+            <div class="photo-grid">
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 01</div>
+                LOOK 01
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 02</div>
+                LOOK 02
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 03</div>
+                LOOK 03
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 04</div>
+                LOOK 04
+              </div>
+
+            </div>
+          </div>
+        `
+        : location.hash === "#/photos/skater/masculino"
+        ? `
+          <div class="box">
+            <div class="box-title">SKATER • MASCULINO</div>
+
+            <p>Referências de looks:</p>
+
+            <div class="photo-grid">
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 01</div>
+                LOOK 01
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 02</div>
+                LOOK 02
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 03</div>
+                LOOK 03
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 04</div>
+                LOOK 04
+              </div>
+
+            </div>
+          </div>
+                `
+        : location.hash === "#/photos/casual-geek/feminino"
+        ? `
+          <div class="box">
+            <div class="box-title">CASUAL / GEEK 2000s • FEMININO</div>
+
+            <p>Referências de looks:</p>
+
+            <div class="photo-grid">
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 01</div>
+                LOOK 01
+                <div>CASUAL</div>
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 02</div>
+                LOOK 02
+                <div>GEEK</div>
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 03</div>
+                LOOK 03
+                <div>CASUAL</div>
+              </div>
+
+              <div class="photo">
+                <div class="placeholder-photo">LOOK 04</div>
+                LOOK 04
+                <div>GEEK</div>
+              </div>
+
+            </div>
+          </div>
+        `
+        : `
+      
+          <div class="box">
+            <div class="box-title">álbum</div>
+            <p>Em breve: referências de looks.</p>
+          </div>
+        `
+    }
+  `,
+  
+  
+  videos: () => `
+  : ""}
+
+    <div class="box">
+    <div class="box-title">álbum: O QUE VESTIR? • escolha seu estilo</div>
+
+     <div class="photo-grid">
+
+  <a href="#/photos/y2k" class="photo">
+    <div class="placeholder-photo">Y2K / POP</div>
+    Y2K / POP
+  </a>
+  </div>
     </div>`,
 
   videos: () => `
