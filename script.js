@@ -721,8 +721,7 @@ const pages = {
             <p>Em breve: referências de looks.</p>
           </div>
         `
-    }
-  `,         
+       
         : location.hash === "#/photos/patricinha-playboy"
         ? `
           <div class="box">
