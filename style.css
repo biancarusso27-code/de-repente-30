@@ -512,3 +512,30 @@ footer {
 .invite .testimonial-author span {
   color: #222222;
 }
+/* ===== ESTATÍSTICAS DO PERFIL - ORKUT ===== */
+
+.orkut-stats {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin: -4px 0 12px;
+  font-size: 11px;
+}
+
+.orkut-stats a,
+.orkut-stats > div {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #777;
+}
+
+.orkut-stats strong {
+  margin-top: 2px;
+  color: #555;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.orkut-stats a:hover span {
+  text-decoration: underline;

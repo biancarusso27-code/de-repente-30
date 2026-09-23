@@ -189,7 +189,33 @@ function rsvpStatus() {
 
 const pages = {
   home: () => `
-    <h2 class="page-title">Bem-vindo ao perfil de Bibica</h2>
+    <h2 class="page-title">Bem-vindo(a), BIBICA</h2>
+    <div class="orkut-stats">
+  <a href="#/scraps">
+    <span>recados</span>
+    <strong>✏️ 30</strong>
+  </a>
+
+  <a href="#/photos">
+    <span>fotos</span>
+    <strong>📷 7</strong>
+  </a>
+
+  <div>
+    <span>fotos comigo</span>
+    <strong>◇ 10</strong>
+  </div>
+
+  <div>
+    <span>fãs</span>
+    <strong>⭐ 30</strong>
+  </div>
+
+  <div>
+    <span>mensagens</span>
+    <strong>✉️ 27</strong>
+  </div>
+</div>
 
     <div class="home-sections">
 
