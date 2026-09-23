@@ -1021,8 +1021,9 @@ const pages = {
     <div class="box-title">depoimento especial</div>
 
     <p class="testimonial-author">
-  ✨Bibica_27✨:
-  <span>DE REPENTE, 30! 💿</span>
+  <strong>De:</strong> ✨Bibica_27✨<br>
+  <strong>Para:</strong> Você ♥<br>
+  <strong>Data:</strong> 23/09/2026
 </p>
 
     <div class="box invite">
