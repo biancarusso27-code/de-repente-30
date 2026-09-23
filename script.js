@@ -932,29 +932,41 @@ const pages = {
 },
 
   videos: () => `
-  
-    <div class="box">
-    <div class="box-title">álbum: O QUE VESTIR? • escolha seu estilo</div>
+  <h2 class="page-title">Vídeos</h2>
 
-     <div class="photo-grid">
+  <div class="box">
+    <div class="box-title">🎧 aquecimento pra festa</div>
 
-  <a href="#/photos/y2k" class="photo">
-    <div class="placeholder-photo">Y2K / POP</div>
-    Y2K / POP
-  </a>
+    <p>
+      Já vai entrando no clima porque dia 27/02 vai ser
+      só pedrada dos anos 2000. 💿
+    </p>
+
+    <p>
+      Dê o play e comece o aquecimento!
+    </p>
+
+    <div class="placeholder-photo" style="height: 220px;">
+      🎵 PLAYLIST DOS ANOS 2000 🎵
+    </div>
+
+    <p>
+      <strong>Bibica's Playlist 💿</strong>
+    </p>
+
+    <p>
+      Pop • Emo • Rock • Funk • Axé • Latino • Forró
+    </p>
+
+    <p>
+      Tem alguma música que NÃO pode faltar? 👀
+    </p>
+
+    <a href="#" class="button">
+      🎵 PEDIR UMA MÚSICA
+    </a>
   </div>
-    </div>`,
-
-  videos: () => `
-    <h2 class="page-title">Vídeos</h2>
-
-    <div class="box">
-      <div class="box-title">a trilha sonora da minha vida</div>
-
-      <p>🎵 Dê play e prepare-se para voltar no tempo.</p>
-
-      <p>${videoButton()}</p>
-    </div>`,
+`,
 
   testimonials: () => `
     <h2 class="page-title">Depoimentos</h2>
