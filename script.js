@@ -620,6 +620,28 @@ const pages = {
             </div>
           </div>
                 `
+                        : location.hash === "#/photos/casual-geek"
+        ? `
+          <div class="box">
+            <div class="box-title">álbum: CASUAL / GEEK 2000s</div>
+
+            <p>Escolha seu estilo:</p>
+
+            <div class="photo-grid">
+
+              <a href="#/photos/casual-geek/feminino" class="photo">
+                <div class="placeholder-photo">FEMININO</div>
+                FEMININO
+              </a>
+
+              <a href="#/photos/casual-geek/masculino" class="photo">
+                <div class="placeholder-photo">MASCULINO</div>
+                MASCULINO
+              </a>
+
+            </div>
+          </div>
+        `
         : location.hash === "#/photos/casual-geek/feminino"
         ? `
           <div class="box">
