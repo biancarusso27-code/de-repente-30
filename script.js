@@ -199,7 +199,7 @@ const pages = {
           <div class="box-title">recado do dia</div>
 
           <p>
-  <strong>Não sou perfeita, mas sou edição limitada ;P</strong>
+  <strong><em>Não sou perfeita, mas sou edição limitada ;P</em></strong>
 </p>
 
 <p style="font-style: italic; color: #8b4bb5;">
@@ -211,7 +211,7 @@ const pages = {
           <div class="box-title">quem sou eu</div>
 
           <p>
-  <strong>Difícil falar de mim... só convivendo pra saber! ;D</strong>
+  <strong><em>Difícil falar de mim... só convivendo pra saber! ;D</em></strong>
 </p>
 
 <p>
@@ -230,7 +230,9 @@ const pages = {
   <strong>humor:</strong> contando os dias pros 30 🎉
 </p>
 
-        <div class="box">
+</div>
+
+<div class="box">
   <div class="box-title">depoimentos</div>
 
   <p>
