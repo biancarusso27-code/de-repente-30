@@ -572,3 +572,13 @@ footer {
   min-width: 0;
   padding: 6px 4px;
 }
+/* ===== TÍTULO DO DEPOIMENTO - Y2K ===== */
+
+.testimonial-title {
+  color: #d63384;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 0.5px;
+}

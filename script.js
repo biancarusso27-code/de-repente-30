@@ -1027,7 +1027,7 @@ const pages = {
 </p>
 
     <div class="box invite">
-  <div class="box-title">DE REPENTE, 30! 💿</div>
+  <div class="box-title testimonial-title">~*~ DE REPENTE, 30! ~*~</div>
 
   <p>
     gnt, chegou a horaaaa 😭
