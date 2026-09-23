@@ -999,18 +999,17 @@ const pages = {
   <span>DE REPENTE, 30! 💿</span>
 </p>
 
-    <hr>
+    <div class="box invite">
+  <div class="box-title">depoimento especial</div>
 
-    <h2>DE REPENTE, 30! 💿</h2>
+  <p>
+    gnt, chegou a horaaaa 😭
+  </p>
 
-    <p>
-      gnt, chegou a horaaaa 😭
-    </p>
-
-    <p>
-      se vc recebeu esse depoimento é pq está oficialmente
-      convocado pra voltar comigo pros anos 2000!!
-    </p>
+  <p>
+    se vc recebeu esse depoimento é pq está oficialmente
+    convocado pra voltar comigo pros anos 2000!!
+  </p>
 
     <p>
       📅 <strong>27/02/2027 — Sábado</strong><br>
