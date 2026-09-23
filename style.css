@@ -591,3 +591,8 @@ footer {
   font-style: italic;
   letter-spacing: 0.3px;
 }
+/* ===== TEXTO DO DEPOIMENTO - ANOS 2000 ===== */
+
+.invite .invite p {
+  font-family: "Trebuchet MS", "Comic Sans MS", Arial, sans-serif;
+}

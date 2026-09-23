@@ -1066,8 +1066,8 @@ const pages = {
 </p>
 
     <p>
-      bora reviver os anos 2000 com tudoooo 💿💗
-    </p>
+  bora reviver os anos 2000 com tudoooo ♥
+</p>
 
     <p>
       <strong>obs: se naum vier, vai tomar block kkkkkkkkk</strong>
