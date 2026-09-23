@@ -199,10 +199,10 @@ const pages = {
           <div class="box-title">recado do dia</div>
 
           <p>
-  Não sou perfeita, mas sou edição limitada ;P
+  <strong>Não sou perfeita, mas sou edição limitada ;P</strong>
 </p>
 
-          <p>
+<p style="font-style: italic; color: #8b4bb5;">
   ~*~ BiiBiCa ~*~
 </p>
         </div>
@@ -211,18 +211,24 @@ const pages = {
           <div class="box-title">quem sou eu</div>
 
           <p>
-            Uma garota que abriu o MSN em 2007 e, quando percebeu,
-            estava fazendo 30 anos.
-          </p>
+  <strong>Difícil falar de mim... só convivendo pra saber! ;D</strong>
+</p>
 
-          <p>
-            <strong>estado:</strong> online
-          </p>
+<p>
+  Amo minha família, meus amigos e curtir a vida ♥
+</p>
 
-          <p>
-            <strong>humor:</strong> comemorando 🎉
-          </p>
-        </div>
+<p>
+  <strong>status:</strong> online 🟢
+</p>
+
+<p>
+  <strong>idade:</strong> 29 (por pouco tempo kkk)
+</p>
+
+<p>
+  <strong>humor:</strong> contando os dias pros 30 🎉
+</p>
 
         <div class="box">
   <div class="box-title">depoimentos</div>
