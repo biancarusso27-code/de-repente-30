@@ -234,7 +234,7 @@ const pages = {
         <div class="box">
           <div class="box-title">quem sou eu</div>
 
-          <p>
+<p>
   <strong><em>Difícil falar de mim... só convivendo pra saber! ;D</em></strong>
 </p>
 
