@@ -1030,8 +1030,8 @@ const pages = {
   <div class="box-title testimonial-title">~*~ DE REPENTE, 30! ~*~</div>
 
   <p>
-    gnt, chegou a horaaaa 😭
-  </p>
+  <strong>gnt, chegou a horaaaa!!! ;D</strong>
+</p>
 
   <p>
     se vc recebeu esse depoimento é pq está oficialmente
@@ -1039,15 +1039,15 @@ const pages = {
   </p>
 
     <p>
-      📅 <strong>27/02/2027 — Sábado</strong><br>
-      🕖 <strong>19h</strong><br>
-      📍 <strong>Sociedade Amigos de Vila Sá</strong><br>
-      R. Taubaté, 891 — Vila Camilópolis — Santo André/SP
-    </p>
+  ♥ <strong>27/02/2027 — sábado</strong><br>
+  ♥ <strong>19h</strong><br>
+  ♥ <strong>Sociedade Amigos de Vila Sá</strong><br>
+  &nbsp;&nbsp;&nbsp;R. Taubaté, 891 — Vila Camilópolis — Santo André/SP
+</p>
 
-    <p>
-      👗 <strong>Dress Code: Anos 2000 / Y2K</strong>
-    </p>
+    <p class="y2k-section-title">
+  ~*~ DRESS CODE: ANOS 2000 / Y2K ~*~
+</p>
 
     <p>
       vale jeans, gloss, óculos, boné, acessórios coloridos,
@@ -1055,15 +1055,15 @@ const pages = {
       escolhe sua versão 2000s e se joga!!
     </p>
 
-    <p>
-      ✨ <strong>Bar & Comida</strong>
-    </p>
+    <p class="y2k-section-title">
+  ~*~ COMIDA & BEBIDA ~*~
+</p>
 
     <p>
-      finger food, refri, suco e água garantidos.<br>
-      traga 1 caixinha da sua cerveja preferida
-      pro cooler coletivo, flw? 🍻
-    </p>
+  finger food, refri, suco e água garantidos.<br>
+  algumas bebidas tbm vão estar por minha conta,
+  mas pode trazer sua bebida preferida pra colocar no cooler ;P
+</p>
 
     <p>
       bora reviver os anos 2000 com tudoooo 💿💗

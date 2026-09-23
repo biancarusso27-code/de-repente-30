@@ -582,3 +582,12 @@ footer {
   text-align: center;
   letter-spacing: 0.5px;
 }
+/* ===== TÍTULOS INTERNOS DO DEPOIMENTO ===== */
+
+.y2k-section-title {
+  color: #6a4c93;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
