@@ -199,18 +199,12 @@ const pages = {
           <div class="box-title">recado do dia</div>
 
           <p>
-            <strong>Você tem 30 novos recados.</strong>
-          </p>
+  Não sou perfeita, mas sou edição limitada ;P
+</p>
 
           <p>
-            Se você recebeu este convite, é porque faz parte da história.
-          </p>
-
-          <p>
-            <a href="#/testimonials">
-              clique aqui para descobrir o motivo →
-            </a>
-          </p>
+  ~*~ BiiBiCa ~*~
+</p>
         </div>
 
         <div class="box">
@@ -231,18 +225,20 @@ const pages = {
         </div>
 
         <div class="box">
-          <div class="box-title">o evento</div>
+  <div class="box-title">depoimentos</div>
 
-          <p>
-            <strong>${EV.title}</strong>
-          </p>
+  <p>
+    <strong>Você tem 1 novo depoimento!</strong>
+  </p>
 
-          ${eventCards()}
+  <p>
+    ✨ Bibica deixou um depoimento para você.
+  </p>
 
-          <p>
-            <a href="#/event">ver detalhes do evento →</a>
-          </p>
-        </div>
+  <p>
+    <a href="#/testimonials">ver depoimento →</a>
+  </p>
+</div>
 
       </div>
 
