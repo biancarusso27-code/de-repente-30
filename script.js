@@ -188,8 +188,115 @@ function rsvpStatus() {
 }
 
 const pages = {
-  <CodeBlock language="javascript" editable>
-home: () => `
+  home: () => `
+    <h2 class="page-title">Bem-vindo ao perfil de Bibica</h2>
+
+    <div class="home-sections">
+
+      <div>
+
+        <div class="box">
+          <div class="box-title">recado do dia</div>
+
+          <p>
+            <strong>Você tem 30 novos recados.</strong>
+          </p>
+
+          <p>
+            Se você recebeu este convite, é porque faz parte da história.
+          </p>
+
+          <p>
+            <a href="#/testimonials">
+              clique aqui para descobrir o motivo →
+            </a>
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="box-title">quem sou eu</div>
+
+          <p>
+            Uma garota que abriu o MSN em 2007 e, quando percebeu,
+            estava fazendo 30 anos.
+          </p>
+
+          <p>
+            <strong>estado:</strong> online
+          </p>
+
+          <p>
+            <strong>humor:</strong> comemorando 🎉
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="box-title">o evento</div>
+
+          <p>
+            <strong>${EV.title}</strong>
+          </p>
+
+          ${eventCards()}
+
+          <p>
+            <a href="#/event">ver detalhes do evento →</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div>
+
+        <div class="box">
+          <div class="box-title">meus amigos</div>
+
+          <div class="friend-grid">
+            ${friends
+              .slice(0, 6)
+              .map(
+                (f) =>
+                  `<div class="friend">
+                    <div class="friend-avatar" aria-hidden="true">
+                      ${initial(f)}
+                    </div>
+                    ${f}
+                  </div>`
+              )
+              .join("")}
+          </div>
+
+          <p>
+            <a href="#/friends">ver todos os amigos →</a>
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="box-title">minhas comunidades</div>
+
+          <div class="community-grid">
+            ${communities
+              .slice(0, 4)
+              .map(
+                (c) =>
+                  `<div class="community">
+                    <strong>${c.name}</strong>
+                    <p>${c.members} membros</p>
+                  </div>`
+              )
+              .join("")}
+          </div>
+
+          <p>
+            <a href="#/communities">
+              ver todas as comunidades →
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+    </div>`,
 
   profile: () => `
     <h2 class="page-title">Perfil</h2>
