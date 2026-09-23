@@ -24,8 +24,8 @@ whatsapp: "5511997684732",
 };   
 
 const scraps = [
-  { name: "Bianca", when: "hoje", text: "AMIGA??? 30??? Como assim???? 😂" },
-  { name: "Guilherme", when: "hoje", text: "Já confirmei minha presença. Agora falta escolher o look." },
+  { name: "Monique", when: "hoje", text: "AMIGA??? 30??? Como assim???? 😂" },
+  { name: "Nicole L", when: "hoje", text: "Já confirmei minha presença. Agora falta escolher o look." },
   { name: "Rose", when: "ontem", text: "Minha filha ❤️" },
 ];
 
@@ -411,12 +411,12 @@ const pages = {
 
           <a href="#/photos/y2k/feminino" class="photo">
             <div class="placeholder-photo">FEMININO</div>
-            👠 FEMININO
+            FEMININO
           </a>
 
           <a href="#/photos/y2k/masculino" class="photo">
             <div class="placeholder-photo">MASCULINO</div>
-            👟 MASCULINO
+            MASCULINO
           </a>
 
         </div>
@@ -613,12 +613,12 @@ const pages = {
 
           <a href="#/photos/skater/feminino" class="photo">
             <div class="placeholder-photo">FEMININO</div>
-            🛹 FEMININO
+            FEMININO
           </a>
 
           <a href="#/photos/skater/masculino" class="photo">
             <div class="placeholder-photo">MASCULINO</div>
-            🧢 MASCULINO
+            MASCULINO
           </a>
 
         </div>
