@@ -548,3 +548,15 @@ footer {
   gap: 12px;
   align-items: start;
 }
+/* ===== AMIGOS NA HOME - GRADE ORKUT ===== */
+
+.home-sections .friend-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.home-sections .friend {
+  min-width: 0;
+  padding: 6px 3px;
+}
