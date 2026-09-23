@@ -950,7 +950,7 @@ const pages = {
   <iframe
     width="100%"
     height="315"
-    src="https://www.youtube.com/embed/videoseries?list=PLOpyVHYg_wjuVo-wnoewywSBzOQ2QxZ19"
+    src="https://www.youtube.com/embed/DUT5rEU6pqM"
     title="Playlist dos anos 2000"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -959,12 +959,17 @@ const pages = {
 </div>
 
     <p>
-      <strong>Bibica's Playlist 💿</strong>
-    </p>
+  <strong>💿 A trilha sonora desse convite</strong>
+</p>
 
-    <p>
-      Pop • Emo • Rock • Funk • Axé • Latino • Forró
-    </p>
+<p>
+  Shakira — Hips Don't Lie
+</p>
+
+<p>
+  Se isso não te transportou pros anos 2000,
+  eu não sei o que vai. 😂
+</p>
 
     <p>
       Tem alguma música que NÃO pode faltar? 👀
