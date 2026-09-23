@@ -989,32 +989,71 @@ const pages = {
 `,
 
   testimonials: () => `
-    <h2 class="page-title">Depoimentos</h2>
+  <h2 class="page-title">Depoimentos</h2>
 
-    <div class="box invite">
-      <div class="box-title">depoimento especial</div>
+  <div class="box invite">
+    <div class="box-title">depoimento especial</div>
 
-      <h2>${EV.title.toUpperCase()}</h2>
+    <p>
+      <strong>De: ✨Bibica_27✨</strong><br>
+      <strong>Para: Você!</strong>
+    </p>
 
-      <p><strong>De: Bibica</strong></p>
+    <hr>
 
-      <p>Você está oficialmente convidado para comemorar comigo os meus 30 anos!</p>
+    <h2>DE REPENTE, 30! 💿</h2>
 
-      ${eventCards()}
+    <p>
+      gnt, chegou a horaaaa 😭
+    </p>
 
-      <p><strong>✨ O TEMA</strong></p>
-      <p>ANOS 2000 • Y2K • NOSTALGIA</p>
+    <p>
+      se vc recebeu esse depoimento é pq está oficialmente
+      convocado pra voltar comigo pros anos 2000!!
+    </p>
 
-      <p>Vista seu melhor look dos anos 2000 e venha preparado para dançar.</p>
+    <p>
+      📅 <strong>27/02/2027 — Sábado</strong><br>
+      🕖 <strong>19h</strong><br>
+      📍 <strong>Sociedade Amigos de Vila Sá</strong><br>
+      R. Taubaté, 891 — Vila Camilópolis — Santo André/SP
+    </p>
 
-      <p><strong>🎧 A TRILHA SONORA</strong></p>
-      <p>Pop • Rock • Emo • Funk • Axé • Pagode • Forró • Eletrohits</p>
+    <p>
+      👗 <strong>Dress Code: Anos 2000 / Y2K</strong>
+    </p>
 
-      <p><strong>📌 ANTES DE SAIR...</strong></p>
-      <p>Salve este convite e não esqueça de confirmar sua presença.</p>
+    <p>
+      vale jeans, gloss, óculos, boné, acessórios coloridos,
+      emo, patricinha, skatista, popstar...
+      escolhe sua versão 2000s e se joga!!
+    </p>
 
-      <p>${rsvpButton()}</p>
-    </div>`,
+    <p>
+      ✨ <strong>Bar & Comida</strong>
+    </p>
+
+    <p>
+      finger food, refri, suco e água garantidos.<br>
+      traga 1 caixinha da sua cerveja preferida
+      pro cooler coletivo, flw? 🍻
+    </p>
+
+    <p>
+      bora reviver os anos 2000 com tudoooo 💿💗
+    </p>
+
+    <p>
+      <strong>obs: se naum vier, vai tomar block kkkkkkkkk</strong>
+    </p>
+
+    <hr>
+
+    <p>
+      ${rsvpButton("💗 ACEITAR DEPOIMENTO")}
+    </p>
+
+  </div>`,
 
   friends: () => `
     <h2 class="page-title">Amigos</h2>
