@@ -596,3 +596,14 @@ footer {
 .invite .invite p {
   font-family: "Trebuchet MS", "Comic Sans MS", Arial, sans-serif;
 }
+/* ===== CABEÇALHO DO DEPOIMENTO ===== */
+
+.testimonial-author {
+  color: #333;
+  font-family: Arial, Verdana, sans-serif;
+  font-style: normal;
+}
+
+.testimonial-author strong {
+  color: #333;
+}
