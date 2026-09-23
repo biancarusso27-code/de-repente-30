@@ -227,20 +227,19 @@ const pages = {
 </div>
     <div class="home-sections">
 
-      <div>
+  <div>
 
-                </div>
+            </div>
 
-        <div class="box">
-          <div class="box-title">quem sou eu</div>
+    <div class="box">
+      <div class="box-title">quem sou eu</div>
 
-<p>
-  <strong><em>Difícil falar de mim... só convivendo pra saber! ;D</em></strong>
-</p>
+      <p>
+        <strong><em>Difícil falar de mim... só convivendo pra saber! ;D</em></strong>
+      </p>
 
-
-<div class="box">
-  <div class="box-title">depoimentos</div>
+    <div class="box">
+      <div class="box-title">depoimentos</div>
 
   <p>
     <strong>Você tem 1 novo depoimento!</strong>
