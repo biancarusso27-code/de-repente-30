@@ -229,9 +229,7 @@ const pages = {
 
   <div>
 
-            </div>
-
-        <div class="box">
+                  <div class="box">
       <div class="box-title">depoimentos</div>
 
   <p>
