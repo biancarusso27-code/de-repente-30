@@ -343,409 +343,594 @@ const pages = {
         .join("")}
     </div>`,
 
-  photos: () => `
+  photos: () => {
+  const route = location.hash;
+
+  // =========================
+  // ÁLBUM PRINCIPAL
+  // =========================
+  if (route === "#/photos") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">
+          álbum: O QUE VESTIR? • escolha seu estilo
+        </div>
+
+        <p>
+          Não precisa copiar o look inteiro.
+          Pegue a inspiração e venha no seu estilo. 😎
+        </p>
+
+        <div class="photo-grid">
+
+          <a href="#/photos/y2k" class="photo">
+            <div class="placeholder-photo">Y2K / POP</div>
+            Y2K / POP
+          </a>
+
+          <a href="#/photos/emo-rock" class="photo">
+            <div class="placeholder-photo">EMO / ROCK</div>
+            EMO / ROCK
+          </a>
+
+          <a href="#/photos/skater" class="photo">
+            <div class="placeholder-photo">SKATER</div>
+            SKATER
+          </a>
+
+          <a href="#/photos/casual-geek" class="photo">
+            <div class="placeholder-photo">CASUAL / GEEK</div>
+            CASUAL / GEEK 2000s
+          </a>
+
+          <a href="#/photos/patricinha-playboy" class="photo">
+            <div class="placeholder-photo">PATRICINHA / PLAYBOY</div>
+            PATRICINHA / PLAYBOY
+          </a>
+
+        </div>
+      </div>
+    `;
+  }
+
+  // =========================
+  // Y2K / POP
+  // =========================
+  if (route === "#/photos/y2k") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">álbum: Y2K / POP</div>
+
+        <p>Escolha seu estilo:</p>
+
+        <div class="photo-grid">
+
+          <a href="#/photos/y2k/feminino" class="photo">
+            <div class="placeholder-photo">FEMININO</div>
+            👠 FEMININO
+          </a>
+
+          <a href="#/photos/y2k/masculino" class="photo">
+            <div class="placeholder-photo">MASCULINO</div>
+            👟 MASCULINO
+          </a>
+
+        </div>
+      </div>
+    `;
+  }
+
+  if (route === "#/photos/y2k/feminino") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">Y2K / POP • FEMININO</div>
+
+        <p>Referências de looks:</p>
+
+        <div class="photo-grid">
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 01</div>
+            LOOK 01
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 02</div>
+            LOOK 02
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 03</div>
+            LOOK 03
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 04</div>
+            LOOK 04
+          </div>
+
+        </div>
+      </div>
+    `;
+  }
+
+  if (route === "#/photos/y2k/masculino") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">Y2K / POP • MASCULINO</div>
+
+        <p>Referências de looks:</p>
+
+        <div class="photo-grid">
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 01</div>
+            LOOK 01
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 02</div>
+            LOOK 02
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 03</div>
+            LOOK 03
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 04</div>
+            LOOK 04
+          </div>
+
+        </div>
+      </div>
+    `;
+  }
+
+  // =========================
+  // EMO / ROCK
+  // =========================
+  if (route === "#/photos/emo-rock") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">álbum: EMO / ROCK</div>
+
+        <p>Escolha seu estilo:</p>
+
+        <div class="photo-grid">
+
+          <a href="#/photos/emo-rock/feminino" class="photo">
+            <div class="placeholder-photo">FEMININO</div>
+            FEMININO
+          </a>
+
+          <a href="#/photos/emo-rock/masculino" class="photo">
+            <div class="placeholder-photo">MASCULINO</div>
+            MASCULINO
+          </a>
+
+        </div>
+      </div>
+    `;
+  }
+
+  if (route === "#/photos/emo-rock/feminino") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">EMO / ROCK • FEMININO</div>
+
+        <p>Referências de looks:</p>
+
+        <div class="photo-grid">
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 01</div>
+            LOOK 01
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 02</div>
+            LOOK 02
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 03</div>
+            LOOK 03
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 04</div>
+            LOOK 04
+          </div>
+
+        </div>
+      </div>
+    `;
+  }
+
+  if (route === "#/photos/emo-rock/masculino") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">EMO / ROCK • MASCULINO</div>
+
+        <p>Referências de looks:</p>
+
+        <div class="photo-grid">
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 01</div>
+            LOOK 01
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 02</div>
+            LOOK 02
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 03</div>
+            LOOK 03
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 04</div>
+            LOOK 04
+          </div>
+
+        </div>
+      </div>
+    `;
+  }
+
+  // =========================
+  // SKATER
+  // =========================
+  if (route === "#/photos/skater") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">álbum: SKATER</div>
+
+        <p>Escolha seu estilo:</p>
+
+        <div class="photo-grid">
+
+          <a href="#/photos/skater/feminino" class="photo">
+            <div class="placeholder-photo">FEMININO</div>
+            🛹 FEMININO
+          </a>
+
+          <a href="#/photos/skater/masculino" class="photo">
+            <div class="placeholder-photo">MASCULINO</div>
+            🧢 MASCULINO
+          </a>
+
+        </div>
+      </div>
+    `;
+  }
+
+  if (route === "#/photos/skater/feminino") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">SKATER • FEMININO</div>
+
+        <p>Referências de looks:</p>
+
+        <div class="photo-grid">
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 01</div>
+            LOOK 01
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 02</div>
+            LOOK 02
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 03</div>
+            LOOK 03
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 04</div>
+            LOOK 04
+          </div>
+
+        </div>
+      </div>
+    `;
+  }
+
+  if (route === "#/photos/skater/masculino") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">SKATER • MASCULINO</div>
+
+        <p>Referências de looks:</p>
+
+        <div class="photo-grid">
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 01</div>
+            LOOK 01
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 02</div>
+            LOOK 02
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 03</div>
+            LOOK 03
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 04</div>
+            LOOK 04
+          </div>
+
+        </div>
+      </div>
+    `;
+  }
+
+  // =========================
+  // CASUAL / GEEK 2000s
+  // =========================
+  if (route === "#/photos/casual-geek") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">álbum: CASUAL / GEEK 2000s</div>
+
+        <p>Escolha seu estilo:</p>
+
+        <div class="photo-grid">
+
+          <a href="#/photos/casual-geek/feminino" class="photo">
+            <div class="placeholder-photo">FEMININO</div>
+            FEMININO
+          </a>
+
+          <a href="#/photos/casual-geek/masculino" class="photo">
+            <div class="placeholder-photo">MASCULINO</div>
+            MASCULINO
+          </a>
+
+        </div>
+      </div>
+    `;
+  }
+
+  if (route === "#/photos/casual-geek/feminino") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">
+          CASUAL / GEEK 2000s • FEMININO
+        </div>
+
+        <p>Referências de looks:</p>
+
+        <div class="photo-grid">
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 01</div>
+            LOOK 01
+            <div>CASUAL</div>
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 02</div>
+            LOOK 02
+            <div>GEEK</div>
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 03</div>
+            LOOK 03
+            <div>CASUAL</div>
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 04</div>
+            LOOK 04
+            <div>GEEK</div>
+          </div>
+
+        </div>
+      </div>
+    `;
+  }
+
+  if (route === "#/photos/casual-geek/masculino") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">
+          CASUAL / GEEK 2000s • MASCULINO
+        </div>
+
+        <p>Referências de looks:</p>
+
+        <div class="photo-grid">
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 01</div>
+            LOOK 01
+            <div>CASUAL</div>
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 02</div>
+            LOOK 02
+            <div>GEEK</div>
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 03</div>
+            LOOK 03
+            <div>CASUAL</div>
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 04</div>
+            LOOK 04
+            <div>GEEK</div>
+          </div>
+
+        </div>
+      </div>
+    `;
+  }
+
+  // =========================
+  // PATRICINHA / PLAYBOY
+  // =========================
+  if (route === "#/photos/patricinha-playboy") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">
+          álbum: PATRICINHA / PLAYBOY
+        </div>
+
+        <p>Escolha seu estilo:</p>
+
+        <div class="photo-grid">
+
+          <a href="#/photos/patricinha-playboy/feminino" class="photo">
+            <div class="placeholder-photo">FEMININO</div>
+            FEMININO
+          </a>
+
+          <a href="#/photos/patricinha-playboy/masculino" class="photo">
+            <div class="placeholder-photo">MASCULINO</div>
+            MASCULINO
+          </a>
+
+        </div>
+      </div>
+    `;
+  }
+
+  if (route === "#/photos/patricinha-playboy/feminino") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">
+          PATRICINHA 2000s • FEMININO
+        </div>
+
+        <p>Referências de looks:</p>
+
+        <div class="photo-grid">
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 01</div>
+            LOOK 01
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 02</div>
+            LOOK 02
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 03</div>
+            LOOK 03
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 04</div>
+            LOOK 04
+          </div>
+
+        </div>
+      </div>
+    `;
+  }
+
+  if (route === "#/photos/patricinha-playboy/masculino") {
+    return `
+      <h2 class="page-title">Fotos</h2>
+
+      <div class="box">
+        <div class="box-title">
+          PLAYBOY 2000s • MASCULINO
+        </div>
+
+        <p>Referências de looks:</p>
+
+        <div class="photo-grid">
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 01</div>
+            LOOK 01
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 02</div>
+            LOOK 02
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 03</div>
+            LOOK 03
+          </div>
+
+          <div class="photo">
+            <div class="placeholder-photo">LOOK 04</div>
+            LOOK 04
+          </div>
+
+        </div>
+      </div>
+    `;
+  }
+
+  // =========================
+  // FALLBACK
+  // =========================
+  return `
     <h2 class="page-title">Fotos</h2>
 
-    ${
-      location.hash === "#/photos"
-        ? `
-          <div class="box">
-            <div class="box-title">álbum: O QUE VESTIR? • escolha seu estilo</div>
+    <div class="box">
+      <div class="box-title">álbum</div>
+      <p>Em breve: referências de looks.</p>
+    </div>
+  `;
+},
 
-            <div class="photo-grid">
-
-  <a href="#/photos/y2k" class="photo">
-    <div class="placeholder-photo">Y2K / POP</div>
-    Y2K / POP
-  </a>
-
-  <a href="#/photos/emo-rock" class="photo">
-    <div class="placeholder-photo">EMO / ROCK</div>
-    EMO / ROCK
-  </a>
-
-  <a href="#/photos/skater" class="photo">
-    <div class="placeholder-photo">SKATER</div>
-    SKATER
-  </a>
-
-  <a href="#/photos/patricinha-playboy" class="photo">
-    <div class="placeholder-photo">PATRICINHA</div>
-    PATRICINHA / PLAYBOY
-  </a>
-
-  <a href="#/photos/casual-geek" class="photo">
-    <div class="placeholder-photo">CASUAL / GEEK</div>
-    CASUAL / GEEK 2000s
-  </a>
-
-</div>
-              
-                         </div>
-          </div>
-        `
-        : location.hash === "#/photos/y2k"
-        ? `
-          <div class="box">
-            <div class="box-title">álbum: Y2K / POP</div>
-
-            <p>Escolha seu estilo:</p>
-
-            <div class="photo-grid">
-
-              <a href="#/photos/y2k/feminino" class="photo">
-                <div class="placeholder-photo">FEMININO</div>
-                👠 FEMININO
-              </a>
-
-              <a href="#/photos/y2k/masculino" class="photo">
-                <div class="placeholder-photo">MASCULINO</div>
-                👟 MASCULINO
-              </a>
-
-            </div>
-          </div>
-        `
-        : location.hash === "#/photos/y2k/feminino"
-        ? `
-          <div class="box">
-            <div class="box-title">Y2K / POP • FEMININO</div>
-
-            <p>Referências de looks:</p>
-
-            <div class="photo-grid">
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 01</div>
-                LOOK 01
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 02</div>
-                LOOK 02
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 03</div>
-                LOOK 03
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 04</div>
-                LOOK 04
-              </div>
-
-            </div>
-          </div>
-        `
-        : location.hash === "#/photos/emo-rock/feminino"
-        ? `
-          <div class="box">
-            <div class="box-title">EMO / ROCK • FEMININO</div>
-
-            <p>Referências de looks:</p>
-
-            <div class="photo-grid">
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 01</div>
-                LOOK 01
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 02</div>
-                LOOK 02
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 03</div>
-                LOOK 03
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 04</div>
-                LOOK 04
-              </div>
-
-            </div>
-          </div>
-        `
-        : location.hash === "#/photos/y2k/masculino"
-        ? `
-          <div class="box">
-            <div class="box-title">Y2K / POP • MASCULINO</div>
-
-            <p>Referências de looks:</p>
-
-            <div class="photo-grid">
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 01</div>
-                LOOK 01
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 02</div>
-                LOOK 02
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 03</div>
-                LOOK 03
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 04</div>
-                LOOK 04
-              </div>
-
-            </div>
-          </div>
-        `
-        : location.hash === "#/photos/emo-rock/masculino"
-        ? `
-          <div class="box">
-            <div class="box-title">EMO / ROCK • MASCULINO</div>
-
-            <p>Referências de looks:</p>
-
-            <div class="photo-grid">
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 01</div>
-                LOOK 01
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 02</div>
-                LOOK 02
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 03</div>
-                LOOK 03
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 04</div>
-                LOOK 04
-              </div>
-
-            </div>
-          </div>
-        `
-        : location.hash === "#/photos/skater"
-        ? `
-          <div class="box">
-            <div class="box-title">álbum: SKATER</div>
-
-            <p>Escolha seu estilo:</p>
-
-            <div class="photo-grid">
-
-              <a href="#/photos/skater/feminino" class="photo">
-                <div class="placeholder-photo">FEMININO</div>
-                🛹 FEMININO
-              </a>
-
-              <a href="#/photos/skater/masculino" class="photo">
-                <div class="placeholder-photo">MASCULINO</div>
-                🧢 MASCULINO
-              </a>
-
-            </div>
-          </div>
-        `
-        : location.hash === "#/photos/skater/feminino"
-        ? `
-          <div class="box">
-            <div class="box-title">SKATER • FEMININO</div>
-
-            <p>Referências de looks:</p>
-
-            <div class="photo-grid">
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 01</div>
-                LOOK 01
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 02</div>
-                LOOK 02
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 03</div>
-                LOOK 03
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 04</div>
-                LOOK 04
-              </div>
-
-            </div>
-          </div>
-        `
-        : location.hash === "#/photos/skater/masculino"
-        ? `
-          <div class="box">
-            <div class="box-title">SKATER • MASCULINO</div>
-
-            <p>Referências de looks:</p>
-
-            <div class="photo-grid">
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 01</div>
-                LOOK 01
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 02</div>
-                LOOK 02
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 03</div>
-                LOOK 03
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 04</div>
-                LOOK 04
-              </div>
-
-            </div>
-          </div>
-                `
-                        : location.hash === "#/photos/casual-geek"
-        ? `
-          <div class="box">
-            <div class="box-title">álbum: CASUAL / GEEK 2000s</div>
-
-            <p>Escolha seu estilo:</p>
-
-            <div class="photo-grid">
-
-              <a href="#/photos/casual-geek/feminino" class="photo">
-                <div class="placeholder-photo">FEMININO</div>
-                FEMININO
-              </a>
-
-              <a href="#/photos/casual-geek/masculino" class="photo">
-                <div class="placeholder-photo">MASCULINO</div>
-                MASCULINO
-              </a>
-
-            </div>
-          </div>
-        `
-        : location.hash === "#/photos/casual-geek/feminino"
-        ? `
-          <div class="box">
-            <div class="box-title">CASUAL / GEEK 2000s • FEMININO</div>
-
-            <p>Referências de looks:</p>
-
-            <div class="photo-grid">
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 01</div>
-                LOOK 01
-                <div>CASUAL</div>
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 02</div>
-                LOOK 02
-                <div>GEEK</div>
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 03</div>
-                LOOK 03
-                <div>CASUAL</div>
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 04</div>
-                LOOK 04
-                <div>GEEK</div>
-              </div>
-
-            </div>
-          </div>
-        `
-                : location.hash === "#/photos/casual-geek/masculino"
-        ? `
-          <div class="box">
-            <div class="box-title">CASUAL / GEEK 2000s • MASCULINO</div>
-
-            <p>Referências de looks:</p>
-
-            <div class="photo-grid">
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 01</div>
-                LOOK 01
-                <div>CASUAL</div>
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 02</div>
-                LOOK 02
-                <div>GEEK</div>
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 03</div>
-                LOOK 03
-                <div>CASUAL</div>
-              </div>
-
-              <div class="photo">
-                <div class="placeholder-photo">LOOK 04</div>
-                LOOK 04
-                <div>GEEK</div>
-              </div>
-
-            </div>
-          </div>
-        `                         
-               : location.hash === "#/photos/patricinha-playboy"
-        ? `
-          <div class="box">
-            <div class="box-title">álbum: PATRICINHA / PLAYBOY</div>
-
-            <p>Escolha seu estilo:</p>
-
-            <div class="photo-grid">
-
-              <a href="#/photos/patricinha-playboy/feminino" class="photo">
-                <div class="placeholder-photo">FEMININO</div>
-                FEMININO
-              </a>
-
-              <a href="#/photos/patricinha-playboy/masculino" class="photo">
-                <div class="placeholder-photo">MASCULINO</div>
-                MASCULINO
-              </a>
-
-            </div>
-          </div>
-        `
-        : `
-      
-          <div class="box">
-            <div class="box-title">álbum</div>
-            <p>Em breve: referências de looks.</p>
-          </div>
-                `
-    }
-  `,
-  
   videos: () => `
   
     <div class="box">
