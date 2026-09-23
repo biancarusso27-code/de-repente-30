@@ -24,9 +24,10 @@ whatsapp: "5511997684732",
 };   
 
 const scraps = [
-  { name: "Monique", when: "hoje", text: "AMIGA??? 30??? Como assim???? 😂" },
-  { name: "Nicole L", when: "hoje", text: "Já confirmei minha presença. Agora falta escolher o look." },
-  { name: "Rose", when: "ontem", text: "Minha filha ❤️" },
+  { name: "Monique", when: "hoje", text: "AMIGAAAA 30????? COMO ASSIM????? kkkkkkkkkkk ;O" },
+  { name: "Nicole L", when: "hoje", text: "passando pra deixar um scrap... saudades amiga!!! bjoooo ;*" },
+  { name: "Rose", when: "ontem", text: "Minha filha ♥ te amo muito!!! Deus te abençoe sempre. bjs da mãe" },
+  { name: "Sogra", when: "ontem", text: "Minha norinha ♥ 30 chegando hein!!! Que Deus abençoe sempre sua vida. bjs da sogra ;D" },
 ];
 
 const outfits = [
