@@ -724,6 +724,38 @@ const pages = {
     }
   `,
   
+          `
+        : location.hash === "#/photos/patricinha-playboy"
+        ? `
+          <div class="box">
+            <div class="box-title">álbum: PATRICINHA / PLAYBOY</div>
+
+            <p>Escolha seu estilo:</p>
+
+            <div class="photo-grid">
+
+              <a href="#/photos/patricinha-playboy/feminino" class="photo">
+                <div class="placeholder-photo">FEMININO</div>
+                FEMININO
+              </a>
+
+              <a href="#/photos/patricinha-playboy/masculino" class="photo">
+                <div class="placeholder-photo">MASCULINO</div>
+                MASCULINO
+              </a>
+
+            </div>
+          </div>
+        `
+        : `
+      
+          <div class="box">
+            <div class="box-title">álbum</div>
+            <p>Em breve: referências de looks.</p>
+          </div>
+        `
+    }
+  `,
   
   videos: () => `
   : ""}
