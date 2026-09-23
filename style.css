@@ -560,3 +560,15 @@ footer {
   min-width: 0;
   padding: 6px 3px;
 }
+/* ===== COMUNIDADES NA HOME - GRADE ORKUT ===== */
+
+.home-sections .community-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.home-sections .community {
+  min-width: 0;
+  padding: 6px 4px;
+}
