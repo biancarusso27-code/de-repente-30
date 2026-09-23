@@ -713,14 +713,7 @@ const pages = {
 
             </div>
           </div>
-        `
-        : `
-      
-          <div class="box">
-            <div class="box-title">álbum</div>
-            <p>Em breve: referências de looks.</p>
-          </div>
-        `
+        `                         
                : location.hash === "#/photos/patricinha-playboy"
         ? `
           <div class="box">
@@ -749,7 +742,7 @@ const pages = {
             <div class="box-title">álbum</div>
             <p>Em breve: referências de looks.</p>
           </div>
-        `
+                `
     }
   `,
   
