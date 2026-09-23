@@ -962,9 +962,16 @@ const pages = {
       Tem alguma música que NÃO pode faltar? 👀
     </p>
 
-    <a href="#" class="button">
-      🎵 PEDIR UMA MÚSICA
-    </a>
+    <a
+  href="https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(
+    "Oi, Bibica! 🎧 Minha sugestão para a playlist da sua festa é: "
+  )}"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="button"
+>
+  🎵 PEDIR UMA MÚSICA
+</a>
   </div>
 `,
 
