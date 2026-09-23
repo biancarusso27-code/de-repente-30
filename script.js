@@ -230,18 +230,22 @@ const pages = {
   <div>
 
                   <div class="box">
-      <div class="box-title">depoimentos</div>
+  <div class="box-title">depoimentos</div>
 
   <p>
     <strong>Você tem 1 novo depoimento!</strong>
   </p>
 
   <p>
-    ✨ Bibica deixou um depoimento para você.
+    <strong>De:</strong> ✨ BiiBiCa ✨
   </p>
 
   <p>
-    <a href="#/testimonials">ver depoimento →</a>
+    Tenho um depoimento pra você... ;D
+  </p>
+
+  <p>
+    <a href="#/testimonials">ler depoimento →</a>
   </p>
 </div>
 
