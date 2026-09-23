@@ -722,9 +722,7 @@ const pages = {
           </div>
         `
     }
-  `,
-  
-          `
+  `,         
         : location.hash === "#/photos/patricinha-playboy"
         ? `
           <div class="box">
@@ -758,8 +756,7 @@ const pages = {
   `,
   
   videos: () => `
-  : ""}
-
+  
     <div class="box">
     <div class="box-title">álbum: O QUE VESTIR? • escolha seu estilo</div>
 
