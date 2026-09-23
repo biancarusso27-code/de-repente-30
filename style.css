@@ -599,7 +599,7 @@ footer {
 /* ===== CABEÇALHO DO DEPOIMENTO ===== */
 
 .testimonial-author {
-  color: #333;
+  color: #333 !important;
   font-family: Arial, Verdana, sans-serif;
   font-style: normal;
 }
