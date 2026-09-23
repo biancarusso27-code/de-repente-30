@@ -457,3 +457,58 @@ footer {
   .content { padding: 14px 14px 28px; }
   .big-date { grid-template-columns: 1fr; }
 }
+
+/* ========================================
+   DEPOIMENTOS — ESTILO ORKUT 2007
+   ======================================== */
+
+.invite {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #222222;
+}
+
+.invite p {
+  margin: 8px 0;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.invite h2 {
+  margin: 10px 0;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.invite strong {
+  font-weight: bold;
+}
+
+.invite hr {
+  height: 1px;
+  margin: 8px 0;
+  border: 0;
+  border-top: 1px solid #d6e3ee;
+}
+
+.invite .box-title {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.invite .testimonial-author {
+  margin: 4px 0 10px;
+  color: #008080;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.invite .testimonial-author span {
+  color: #222222;
+}

@@ -994,10 +994,10 @@ const pages = {
   <div class="box invite">
     <div class="box-title">depoimento especial</div>
 
-    <p>
-      <strong>De: ✨Bibica_27✨</strong><br>
-      <strong>Para: Você!</strong>
-    </p>
+    <p class="testimonial-author">
+  ✨Bibica_27✨:
+  <span>DE REPENTE, 30! 💿</span>
+</p>
 
     <hr>
 
