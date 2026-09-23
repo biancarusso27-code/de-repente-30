@@ -216,22 +216,20 @@ const pages = {
     <strong>✉️ 27</strong>
   </div>
 </div>
+<div class="profile-views">
+  <strong>Visualizações de perfil:</strong><br>
+  Total: 2.727, Última Semana: 30, Ontem: 27
+</div>
 
+<div class="fortune">
+  <strong>Sorte de hoje:</strong><br>
+  Não sou perfeita, mas sou edição limitada ;P
+</div>
     <div class="home-sections">
 
       <div>
 
-        <div class="box">
-          <div class="box-title">recado do dia</div>
-
-          <p>
-  <strong><em>Não sou perfeita, mas sou edição limitada ;P</em></strong>
-</p>
-
-<p style="font-style: italic; color: #8b4bb5;">
-  ~*~ BiiBiCa ~*~
-</p>
-        </div>
+                </div>
 
         <div class="box">
           <div class="box-title">quem sou eu</div>
@@ -240,23 +238,6 @@ const pages = {
   <strong><em>Difícil falar de mim... só convivendo pra saber! ;D</em></strong>
 </p>
 
-<p>
-  Amo minha família, meus amigos e curtir a vida ♥
-</p>
-
-<p>
-  <strong>status:</strong> online 🟢
-</p>
-
-<p>
-  <strong>idade:</strong> 29 (por pouco tempo kkk)
-</p>
-
-<p>
-  <strong>humor:</strong> contando os dias pros 30 🎉
-</p>
-
-</div>
 
 <div class="box">
   <div class="box-title">depoimentos</div>
@@ -329,23 +310,44 @@ const pages = {
     </div>`,
 
   profile: () => `
-    <h2 class="page-title">Perfil</h2>
+    <h2 class="page-title">Perfil de BiiBiCa</h2>
 
     <div class="box">
-      <div class="box-title">${EV.title.toLowerCase()}</div>
+      <div class="box-title">quem sou eu</div>
 
-      <div class="invite">
-        <h2>💜 Você está convidado!</h2>
-        <p>Depois de 29 anos, Bibica finalmente chegou aos 30.</p>
+      <div class="orkut-about">
+        <p class="orkut-signature">
+          ~*~ BiiBiCa ~*~
+        </p>
 
-        ${eventCards()}
+        <p>
+          <strong><em>
+            Difícil falar de mim... só convivendo pra saber! ;D
+          </em></strong>
+        </p>
 
-        <p><strong>Tema:</strong> ${EV.theme}</p>
-
-        <p>Vista seu melhor look dos anos 2000 e venha preparado para dançar.</p>
-
-        <p>${rsvpButton()}</p>
+        <p>
+          Amo minha família, meus amigos e curtir a vida ♥
+        </p>
       </div>
+    </div>
+
+    <div class="box">
+      <div class="box-title">informações básicas</div>
+
+      <p><strong>nome:</strong> Bibica</p>
+      <p><strong>idade:</strong> 29 anos</p>
+      <p><strong>aniversário:</strong> 27 de fevereiro</p>
+      <p><strong>status:</strong> online 🟢</p>
+      <p><strong>humor:</strong> contando os dias pros 30 🎉</p>
+    </div>
+
+    <div class="box">
+      <div class="box-title">interesses</div>
+
+      <p><strong>música:</strong> anos 2000, pop, rock, emo e tudo que tocava no MSN 🎧</p>
+      <p><strong>internet:</strong> Orkut, MSN, Fotolog e ficar horas escolhendo subnick</p>
+      <p><strong>festas:</strong> qualquer uma que tenha música boa e gente que eu amo ♥</p>
     </div>`,
 
   scraps: () => `
