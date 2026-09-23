@@ -540,3 +540,11 @@ footer {
 .orkut-stats a:hover span {
   text-decoration: underline;
 }
+/* ===== HOME - DUAS COLUNAS ESTILO ORKUT ===== */
+
+.home-sections {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 12px;
+  align-items: start;
+}
