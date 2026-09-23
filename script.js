@@ -946,9 +946,17 @@ const pages = {
       Dê o play e comece o aquecimento!
     </p>
 
-    <div class="placeholder-photo" style="height: 220px;">
-      🎵 PLAYLIST DOS ANOS 2000 🎵
-    </div>
+    <div style="margin: 12px 0;">
+  <iframe
+    width="100%"
+    height="315"
+    src="https://www.youtube.com/embed/videoseries?list=PLOpyVHYg_wjuVo-wnoewywSBzOQ2QxZ19"
+    title="Playlist dos anos 2000"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
 
     <p>
       <strong>Bibica's Playlist 💿</strong>
