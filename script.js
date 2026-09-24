@@ -463,7 +463,7 @@ const pages = {
         <div class="photo-grid">
 
           <div class="photo">
-            <img src="./images/looks/y2k/fem-01.jpg" alt="Look Y2K feminino 01">
+            <img src="./imagens/looks/y2k/fem-01.jpg" alt="Look Y2K feminino 01">
             LOOK 01
           </div>
 
