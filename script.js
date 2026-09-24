@@ -468,19 +468,19 @@ const pages = {
           </div>
 
           <div class="photo">
-            <div class="placeholder-photo">LOOK 02</div>
-            LOOK 02
-          </div>
+  <img src="./imagens/looks/y2k/fem-02.png" alt="Look Y2K feminino 02">
+  LOOK 02
+</div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 03</div>
-            LOOK 03
-          </div>
+<div class="photo">
+  <img src="./imagens/looks/y2k/fem-03.jpg" alt="Look Y2K feminino 03">
+  LOOK 03
+</div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 04</div>
-            LOOK 04
-          </div>
+<div class="photo">
+  <img src="./imagens/looks/y2k/fem-04.jpg" alt="Look Y2K feminino 04">
+  LOOK 04
+</div>
 
         </div>
       </div>
