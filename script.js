@@ -488,40 +488,40 @@ const pages = {
   }
 
   if (route === "#/photos/y2k/masculino") {
-    return `
-      <h2 class="page-title">Fotos</h2>
+  return `
+    <h2 class="page-title">Fotos</h2>
 
-      <div class="box">
-        <div class="box-title">Y2K / POP • MASCULINO</div>
+    <div class="box">
+      <div class="box-title">Y2K / POP • MASCULINO</div>
 
-        <p>Referências de looks:</p>
+      <p>Referências de looks:</p>
 
-        <div class="photo-grid">
+      <div class="photo-grid">
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 01</div>
-            LOOK 01
-          </div>
-
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 02</div>
-            LOOK 02
-          </div>
-
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 03</div>
-            LOOK 03
-          </div>
-
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 04</div>
-            LOOK 04
-          </div>
-
+        <div class="photo">
+          <img src="images/looks/y2k/masc-01.jpg" alt="Look Y2K masculino 01">
+          LOOK 01
         </div>
+
+        <div class="photo">
+          <img src="images/looks/y2k/masc-02.jpg" alt="Look Y2K masculino 02">
+          LOOK 02
+        </div>
+
+        <div class="photo">
+          <img src="images/looks/y2k/masc-03.jpg" alt="Look Y2K masculino 03">
+          LOOK 03
+        </div>
+
+        <div class="photo">
+          <img src="images/looks/y2k/masc-04.jpg" alt="Look Y2K masculino 04">
+          LOOK 04
+        </div>
+
       </div>
-    `;
-  }
+    </div>
+  `;
+}
 
   // =========================
   // EMO / ROCK
