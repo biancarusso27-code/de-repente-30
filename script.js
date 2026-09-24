@@ -393,27 +393,27 @@ const pages = {
         <div class="photo-grid">
 
           <a href="#/photos/y2k" class="photo">
-            <div class="placeholder-photo">Y2K / POP</div>
+            <img src="imagens/capas/y2k-pop.jpg" alt="Capa Y2K / POP">
             Y2K / POP
           </a>
 
           <a href="#/photos/emo-rock" class="photo">
-            <div class="placeholder-photo">EMO / ROCK</div>
+            <img src="imagens/capas/emo-rock.jpg" alt="Capa Emo / Rock">
             EMO / ROCK
           </a>
 
           <a href="#/photos/skater" class="photo">
-            <div class="placeholder-photo">SKATER</div>
+            <img src="imagens/capas/skater.jpg" alt="Capa Skater">
             SKATER
           </a>
 
           <a href="#/photos/casual-geek" class="photo">
-            <div class="placeholder-photo">CASUAL / GEEK</div>
+            <img src="imagens/capas/casual-geek.jpg" alt="Capa Casual / Geek 2000s">
             CASUAL / GEEK 2000s
           </a>
 
           <a href="#/photos/patricinha-playboy" class="photo">
-            <div class="placeholder-photo">PATRICINHA / PLAYBOY</div>
+            <img src="imagens/capas/patricinha-playboy.jpg" alt="Capa Patricinha / Playboy">
             PATRICINHA / PLAYBOY
           </a>
 
