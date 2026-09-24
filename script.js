@@ -684,27 +684,23 @@ const pages = {
         <div class="photo-grid">
 
           <div class="photo">
-    <img src="imagens/looks/skater/skater-feminino-01.jpg"
-         alt="Skater feminino - regata, bermudão e gorro">
-    LOOK 01
+   <img src="imagens/looks/looks skater/skater-feminino-01.jpg"
+           LOOK 01
   </div>
 
           <div class="photo">
-    <img src="imagens/looks/skater/skater-feminino-02.jpg"
-         alt="Skater feminino - gravata e calça cargo">
-    LOOK 02
+    <img src="imagens/looks/looks skater/skater-feminino-02.jpg"
+             LOOK 02
   </div>
 
           <div class="photo">
-    <img src="imagens/looks/skater/skater-feminino-03.jpg"
-         alt="Skater feminino - calça camuflada Y2K">
-    LOOK 03
+    <img src="imagens/looks/looks skater/skater-feminino-03.jpg"
+             LOOK 03
   </div>
 
   <div class="photo">
-    <img src="imagens/looks/skater/skater-feminino-04.jpg"
-         alt="Skater feminino - calça quadriculada e Vans">
-    LOOK 04
+    <img src="imagens/looks/looks skater/skater-feminino-04.jpg"
+             LOOK 04
   </div>
 
         </div>
@@ -724,27 +720,23 @@ const pages = {
         <div class="photo-grid">
 
           <div class="photo">
-    <img src="imagens/looks/skater/skater-masculino-01.jpg"
-         alt="Skater masculino - camiseta Super Mario e jeans baggy">
-    LOOK 01
+    <img src="imagens/looks/looks skater/skater-masculino-01.jpg"
+             LOOK 01
   </div>
 
   <div class="photo">
-    <img src="imagens/looks/skater/skater-masculino-02.jpg"
-         alt="Skater masculino - camiseta preta e bermudão">
-    LOOK 02
+    <img src="imagens/looks/looks skater/skater-masculino-02.jpg"
+            LOOK 02
   </div>
 
           <div class="photo">
-    <img src="imagens/looks/skater/skater-masculino-03.jpg"
-         alt="Skater masculino - camisetas sobrepostas">
-    LOOK 03
+    <img src="imagens/looks/looks skater/skater-masculino-03.jpg"
+            LOOK 03
   </div>
 
   <div class="photo">
-    <img src="imagens/looks/skater/skater-masculino-04.jpg"
-         alt="Skater masculino - camiseta Element e jeans baggy">
-    LOOK 04
+    <img src="imagens/looks/looks skater/skater-masculino-04.jpg"
+           LOOK 04
   </div>
 
         </div>
