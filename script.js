@@ -437,12 +437,12 @@ const pages = {
         <div class="photo-grid">
 
           <a href="#/photos/y2k/feminino" class="photo">
-            <div class="placeholder-photo">FEMININO</div>
+           <img src="imagens/subcapas/y2k-pop-feminino.jpg" alt="Y2K / POP Feminino">
             FEMININO
           </a>
 
           <a href="#/photos/y2k/masculino" class="photo">
-            <div class="placeholder-photo">MASCULINO</div>
+            <img src="imagens/subcapas/y2k-pop-masculino.jpg" alt="Y2K / POP Masculino">
             MASCULINO
           </a>
 
@@ -538,12 +538,12 @@ const pages = {
         <div class="photo-grid">
 
           <a href="#/photos/emo-rock/feminino" class="photo">
-            <div class="placeholder-photo">FEMININO</div>
+            <img src="imagens/subcapas/emo-rock-feminino.jpg" alt="EMO / ROCK Feminino">
             FEMININO
           </a>
 
           <a href="#/photos/emo-rock/masculino" class="photo">
-            <div class="placeholder-photo">MASCULINO</div>
+            <img src="imagens/subcapas/emo-rock-masculino.jpg" alt="EMO / ROCK Masculino">
             MASCULINO
           </a>
 
@@ -639,12 +639,12 @@ const pages = {
         <div class="photo-grid">
 
           <a href="#/photos/skater/feminino" class="photo">
-            <div class="placeholder-photo">FEMININO</div>
+            <img src="imagens/subcapas/skater-feminino.jpg" alt="SKATER Feminino">
             FEMININO
           </a>
 
           <a href="#/photos/skater/masculino" class="photo">
-            <div class="placeholder-photo">MASCULINO</div>
+            <img src="imagens/subcapas/skater-masculino.jpg" alt="SKATER Masculino">
             MASCULINO
           </a>
 
@@ -740,12 +740,12 @@ const pages = {
         <div class="photo-grid">
 
           <a href="#/photos/casual-geek/feminino" class="photo">
-            <div class="placeholder-photo">FEMININO</div>
+            <img src="imagens/subcapas/casual-geek-feminino.jpg" alt="CASUAL / GEEK Feminino">
             FEMININO
           </a>
 
           <a href="#/photos/casual-geek/masculino" class="photo">
-            <div class="placeholder-photo">MASCULINO</div>
+            <img src="imagens/subcapas/casual-geek-masculino.jpg" alt="CASUAL / GEEK Masculino">
             MASCULINO
           </a>
 
@@ -855,12 +855,12 @@ const pages = {
         <div class="photo-grid">
 
           <a href="#/photos/patricinha-playboy/feminino" class="photo">
-            <div class="placeholder-photo">FEMININO</div>
+            <img src="imagens/subcapas/patricinha-feminino.jpg" alt="PATRICINHA Feminino">
             FEMININO
           </a>
 
           <a href="#/photos/patricinha-playboy/masculino" class="photo">
-            <div class="placeholder-photo">MASCULINO</div>
+            <img src="imagens/subcapas/playboy-masculino.jpg" alt="PLAYBOY Masculino">
             MASCULINO
           </a>
 
