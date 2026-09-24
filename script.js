@@ -563,10 +563,12 @@ const pages = {
 
         <div class="photo-grid">
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 01</div>
-            LOOK 01
-          </div>
+          
+<div class="photo">
+  <img src="imagens/looks/looks%20emo-rock/emo-feminino-01.jpg"
+       alt="Inspiração de look Emo Rock feminino 01">
+  LOOK 01
+</div>
 
           <div class="photo">
             <div class="placeholder-photo">LOOK 02</div>
