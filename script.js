@@ -681,29 +681,34 @@ const pages = {
 
         <p>Referências de looks:</p>
 
-        <div class="photo-grid">
+     
+<div class="photo-grid">
 
-          <div class="photo">
-   <img src="imagens/looks/looks skater/skater-feminino-01.jpg"
-           LOOK 01
+  <div class="photo">
+    <img src="imagens/looks/looks skater/skater-feminino-01.jpg"
+         alt="Skater feminino - look 01">
+    LOOK 01
   </div>
 
-          <div class="photo">
+  <div class="photo">
     <img src="imagens/looks/looks skater/skater-feminino-02.jpg"
-             LOOK 02
+         alt="Skater feminino - look 02">
+    LOOK 02
   </div>
 
-          <div class="photo">
+  <div class="photo">
     <img src="imagens/looks/looks skater/skater-feminino-03.jpg"
-             LOOK 03
+         alt="Skater feminino - look 03">
+    LOOK 03
   </div>
 
   <div class="photo">
     <img src="imagens/looks/looks skater/skater-feminino-04.jpg"
-             LOOK 04
+         alt="Skater feminino - look 04">
+    LOOK 04
   </div>
 
-        </div>
+</div>
       </div>
     `;
   }
@@ -717,29 +722,33 @@ const pages = {
 
         <p>Referências de looks:</p>
 
-        <div class="photo-grid">
+<div class="photo-grid">
 
-          <div class="photo">
+  <div class="photo">
     <img src="imagens/looks/looks skater/skater-masculino-01.jpg"
-             LOOK 01
+         alt="Skater masculino - look 01">
+    LOOK 01
   </div>
 
   <div class="photo">
     <img src="imagens/looks/looks skater/skater-masculino-02.jpg"
-            LOOK 02
+         alt="Skater masculino - look 02">
+    LOOK 02
   </div>
 
-          <div class="photo">
+  <div class="photo">
     <img src="imagens/looks/looks skater/skater-masculino-03.jpg"
-            LOOK 03
+         alt="Skater masculino - look 03">
+    LOOK 03
   </div>
 
   <div class="photo">
     <img src="imagens/looks/looks skater/skater-masculino-04.jpg"
-           LOOK 04
+         alt="Skater masculino - look 04">
+    LOOK 04
   </div>
 
-        </div>
+</div>
       </div>
     `;
   }
