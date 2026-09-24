@@ -351,7 +351,14 @@ a:focus-visible,
   border-radius: var(--radius);
   text-align: center;
 }
-
+.photo img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
 .friend-avatar {
   width: 56px;
   height: 56px;
