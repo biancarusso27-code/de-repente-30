@@ -684,24 +684,28 @@ const pages = {
         <div class="photo-grid">
 
           <div class="photo">
-            <div class="placeholder-photo">LOOK 01</div>
-            LOOK 01
-          </div>
+    <img src="imagens/looks/skater/skater-feminino-01.jpg"
+         alt="Skater feminino - regata, bermudão e gorro">
+    LOOK 01
+  </div>
 
           <div class="photo">
-            <div class="placeholder-photo">LOOK 02</div>
-            LOOK 02
-          </div>
+    <img src="imagens/looks/skater/skater-feminino-02.jpg"
+         alt="Skater feminino - gravata e calça cargo">
+    LOOK 02
+  </div>
 
           <div class="photo">
-            <div class="placeholder-photo">LOOK 03</div>
-            LOOK 03
-          </div>
+    <img src="imagens/looks/skater/skater-feminino-03.jpg"
+         alt="Skater feminino - calça camuflada Y2K">
+    LOOK 03
+  </div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 04</div>
-            LOOK 04
-          </div>
+  <div class="photo">
+    <img src="imagens/looks/skater/skater-feminino-04.jpg"
+         alt="Skater feminino - calça quadriculada e Vans">
+    LOOK 04
+  </div>
 
         </div>
       </div>
@@ -720,24 +724,28 @@ const pages = {
         <div class="photo-grid">
 
           <div class="photo">
-            <div class="placeholder-photo">LOOK 01</div>
-            LOOK 01
-          </div>
+    <img src="imagens/looks/skater/skater-masculino-01.jpg"
+         alt="Skater masculino - camiseta Super Mario e jeans baggy">
+    LOOK 01
+  </div>
+
+  <div class="photo">
+    <img src="imagens/looks/skater/skater-masculino-02.jpg"
+         alt="Skater masculino - camiseta preta e bermudão">
+    LOOK 02
+  </div>
 
           <div class="photo">
-            <div class="placeholder-photo">LOOK 02</div>
-            LOOK 02
-          </div>
+    <img src="imagens/looks/skater/skater-masculino-03.jpg"
+         alt="Skater masculino - camisetas sobrepostas">
+    LOOK 03
+  </div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 03</div>
-            LOOK 03
-          </div>
-
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 04</div>
-            LOOK 04
-          </div>
+  <div class="photo">
+    <img src="imagens/looks/skater/skater-masculino-04.jpg"
+         alt="Skater masculino - camiseta Element e jeans baggy">
+    LOOK 04
+  </div>
 
         </div>
       </div>
