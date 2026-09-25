@@ -614,3 +614,117 @@ footer {
 .testimonial-author strong {
   color: #333;
 }
+
+/* PERFIL CLÁSSICO DO ORKUT */
+
+.orkut-profile {
+  background: #fff;
+  padding: 8px 6px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+
+.orkut-profile-header h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 4px;
+}
+
+.orkut-profile-header p {
+  color: #888;
+  margin: 0 0 10px;
+}
+
+.orkut-profile-visibility {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #ddd;
+  padding: 8px 4px;
+}
+
+.orkut-profile-visibility select {
+  font: inherit;
+  padding: 3px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+}
+
+.orkut-profile-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 8px 4px;
+  color: #777;
+  font-size: 11px;
+}
+
+.orkut-profile-stats span {
+  display: flex;
+  flex-direction: column;
+}
+
+.orkut-profile-stats strong {
+  color: #666;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.orkut-profile-tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid #a8c4df;
+  margin-top: 5px;
+}
+
+.orkut-profile-tabs span {
+  padding: 5px 9px;
+  background: #edf5fc;
+  border: 1px solid #a8c4df;
+  border-bottom: none;
+  color: #35618c;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.orkut-profile-tabs .active {
+  background: #668fb4;
+  color: #fff;
+}
+
+.orkut-profile-table {
+  padding-top: 18px;
+}
+
+.profile-line {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  padding: 4px 8px;
+  line-height: 1.45;
+}
+
+.profile-line:nth-child(odd) {
+  background: #e6f1ff;
+}
+
+.profile-line span:first-child {
+  color: #777;
+  text-align: right;
+  padding-right: 12px;
+}
+
+.profile-line span:last-child {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .profile-line {
+    grid-template-columns: 38% 62%;
+    padding: 5px 4px;
+  }
+
+  .orkut-profile-stats {
+    gap: 10px;
+  }
+}
