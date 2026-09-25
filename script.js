@@ -327,7 +327,7 @@ profile: () => `
       <span>fãs <strong>★42</strong></span>
       <span>confiável <strong>😊😊😊</strong></span>
       <span>legal <strong>👍👍👍</strong></span>
-      <span>sexy <strong>♥♥♥</strong></span>
+      <span>sexy <strong>❤️❤️❤️</strong></span>
     </div>
 
     <div class="orkut-profile-tabs">
