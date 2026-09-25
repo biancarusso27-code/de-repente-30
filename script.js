@@ -1163,15 +1163,54 @@ profile: () => `
     </div>`,
 
   event: () => `
-    <h2 class="page-title">Evento</h2>
+  <h2 class="page-title">Evento</h2>
 
-    <div class="box">
-      <div class="box-title">${EV.title.toLowerCase()}</div>
+  <div class="box">
+    <div class="box-title">${EV.title.toLowerCase()}</div>
+
+    <p class="event-breadcrumb">
+      início &gt; meus eventos &gt; de repente, 30!
+    </p>
+
+    <h2 class="event-heading">De Repente, 30! 💿</h2>
+
+    <p class="event-invite">
+      Você foi convidado(a) para o aniversário da BiiBiCa!
+    </p>
+
+    <div class="event-section-title">
+      informações do evento
+    </div>
+
+    <div class="event-details">
+      <div><span>anfitriã:</span><span>BiiBiCa</span></div>
+      <div><span>data:</span><span>${EV.date}</span></div>
+      <div><span>horário:</span><span>${EV.time}</span></div>
+      <div><span>local:</span><span>${EV.place}</span></div>
+      <div>
+        <span>endereço:</span>
+        <span>Rua Taubaté, 891 — Santo André/SP</span>
+      </div>
+      <div><span>tema:</span><span>${EV.theme}</span></div>
+    </div>
+
+    <div class="event-section-title">
+      sobre o evento
+    </div>
+
+    <p class="event-description">
+      De repente, 30! 🎉<br><br>
+      Prepare seu melhor look dos anos 2000,
+      porque vamos voltar no tempo por uma noite!
+      <br><br>
+      Música, nostalgia e muita diversão para
+      comemorar meus 30 anos com vocês. ♥
+    </p>
+
+    <div class="event-rsvp">
+      <h3>você vai participar?</h3>
 
       <p><strong>Status:</strong> ${rsvpStatus()}</p>
-      <p><strong>Data:</strong> ${EV.date}</p>
-      <p><strong>Horário:</strong> ${EV.time}</p>
-      <p><strong>Local:</strong> ${EV.place}</p>
 
       <p>${rsvpButton("EU VOU!")}</p>
     </div>`,
