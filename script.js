@@ -903,22 +903,22 @@ const pages = {
         <div class="photo-grid">
 
            <div class="photo">
-          <img src="imagens/looks/looks patricinha-playboy/patricinha-feminino-01.jpg">
+          <img src="imagens/looks/looks patricinha - playboy/patricinha-feminino-01.jpg">
           LOOK 01
         </div>
 
           <div class="photo">
-          <img src="imagens/looks/looks patricinha-playboy/patricinha-feminino-02.jpg">
+          <img src="imagens/looks/looks patricinha - playboy/patricinha-feminino-02.jpg">
           LOOK 02
         </div>
 
         <div class="photo">
-          <img src="imagens/looks/looks patricinha-playboy/patricinha-feminino-03.jpg">
+          <img src="imagens/looks/looks patricinha - playboy/patricinha-feminino-03.jpg">
           LOOK 03
         </div>
 
         <div class="photo">
-          <img src="imagens/looks/looks patricinha-playboy/patricinha-feminino-04.jpg">
+          <img src="imagens/looks/looks patricinha - playboy/patricinha-feminino-04.jpg">
           LOOK 04
         </div>
 
@@ -941,22 +941,22 @@ const pages = {
         <div class="photo-grid">
 
           <div class="photo">
-          <img src="imagens/looks/looks patricinha-playboy/playboy-masculino-01.jpg">
+          <img src="imagens/looks/looks patricinha - playboy/playboy-masculino-01.jpg">
           LOOK 01
         </div>
 
         <div class="photo">
-          <img src="imagens/looks/looks patricinha-playboy/playboy-masculino-02.jpg">
+          <img src="imagens/looks/looks patricinha - playboy/playboy-masculino-02.jpg">
           LOOK 02
         </div>
 
         <div class="photo">
-          <img src="imagens/looks/looks patricinha-playboy/playboy-masculino-03.jpg">
+          <img src="imagens/looks/looks patricinha - playboy/playboy-masculino-03.jpg">
           LOOK 03
         </div>
 
         <div class="photo">
-          <img src="imagens/looks/looks patricinha-playboy/playboy-masculino-04.jpg">
+          <img src="imagens/looks/looks patricinha - playboy/playboy-masculino-04.jpg">
           LOOK 04
         </div>
 
