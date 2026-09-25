@@ -82,6 +82,7 @@ const guestGroups = [
   { id: "waleska", names: ["Waleska"] },
   { id: "charlene", names: ["Charlene"] },
   { id: "claudia", names: ["Claudia"] },
+  { id: "Isabelle", names: ["Isabelle"] },
 ];
 
 function getGuestGroup() {
