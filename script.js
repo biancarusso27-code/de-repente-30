@@ -304,71 +304,101 @@ const pages = {
 
     </div>`,
 
-  profile: () => `
-    <h2 class="page-title">Perfil de BiiBiCa</h2>
 
-    <div class="box">
-      <div class="box-title">quem sou eu</div>
+profile: () => `
+  <div class="orkut-profile">
 
-      <div class="orkut-about">
-        <p class="orkut-signature">
-          ~*~ BiiBiCa ~*~
-        </p>
+    <div class="orkut-profile-header">
+      <h2>BiiBiCa</h2>
+      <p>Início &gt; Meu perfil</p>
+    </div>
 
-        <p>
-          <strong><em>
-            Difícil falar de mim... só convivendo pra saber! ;D
-          </em></strong>
-        </p>
+    <div class="orkut-profile-visibility">
+      <span>Quem vê meu perfil assim?</span>
+      <select aria-label="Visualização do perfil">
+        <option>só eu</option>
+      </select>
+    </div>
 
-        <p>
-          Amo minha família, meus amigos e curtir a vida ♥
-        </p>
+    <div class="orkut-profile-stats">
+      <span>recados <strong>30</strong></span>
+      <span>fotos <strong>40</strong></span>
+      <span>vídeos <strong>5</strong></span>
+      <span>fãs <strong>★42</strong></span>
+      <span>confiável <strong>😊😊😊</strong></span>
+      <span>legal <strong>👍👍👍</strong></span>
+      <span>sexy <strong>♥♥♥</strong></span>
+    </div>
+
+    <div class="orkut-profile-tabs">
+      <span class="active">social</span>
+      <span>profissional</span>
+      <span>pessoal</span>
+    </div>
+
+    <div class="orkut-profile-table">
+
+      <div class="profile-line">
+        <span>relacionamento:</span>
+        <span>namorando ♥</span>
       </div>
+
+      <div class="profile-line">
+        <span>aniversário:</span>
+        <span>Fevereiro 27</span>
+      </div>
+
+      <div class="profile-line">
+        <span>idade:</span>
+        <span>29 (quase 30!)</span>
+      </div>
+
+      <div class="profile-line">
+        <span>cidade:</span>
+        <span>Santo André, Brasil</span>
+      </div>
+
+      <div class="profile-line">
+        <span>idiomas:</span>
+        <span>Português</span>
+      </div>
+
+      <div class="profile-line">
+        <span>interesses no Orkut:</span>
+        <span>anos 2000, música, moda e nostalgia</span>
+      </div>
+
+      <div class="profile-line">
+        <span>quem sou eu:</span>
+        <span>
+          ~*~ BiiBiCa ~*~ <br><br>
+          Difícil falar de mim... só convivendo pra saber! ;D
+          <br><br>
+          Amo minha família, meus amigos e curtir a vida ♥
+          <br><br>
+          Contando os dias para os 30!
+        </span>
+      </div>
+
+      <div class="profile-line">
+        <span>música:</span>
+        <span>pop, rock, emo e tudo que tocava no MSN 🎧</span>
+      </div>
+
+      <div class="profile-line">
+        <span>estilo:</span>
+        <span>fashionista, anos 2000 e um pouco de tudo!</span>
+      </div>
+
+      <div class="profile-line">
+        <span>humor:</span>
+        <span>online e preparando a festa do século! 🎉</span>
+      </div>
+
     </div>
 
-    <div class="box">
-      <div class="box-title">informações básicas</div>
-
-      <p><strong>nome:</strong> Bibica</p>
-      <p><strong>idade:</strong> 29 anos</p>
-      <p><strong>aniversário:</strong> 27 de fevereiro</p>
-      <p><strong>status:</strong> online 🟢</p>
-      <p><strong>humor:</strong> contando os dias pros 30 🎉</p>
-    </div>
-
-    <div class="box">
-      <div class="box-title">interesses</div>
-
-      <p><strong>música:</strong> anos 2000, pop, rock, emo e tudo que tocava no MSN 🎧</p>
-      <p><strong>internet:</strong> Orkut, MSN, Fotolog e ficar horas escolhendo subnick</p>
-      <p><strong>festas:</strong> qualquer uma que tenha música boa e gente que eu amo ♥</p>
-    </div>`,
-
-  scraps: () => `
-    <h2 class="page-title">Recados</h2>
-
-    <div class="box">
-      <div class="box-title">30 novos recados</div>
-
-      ${scraps
-        .map(
-          (s) => `
-        <div class="scrap">
-          <div class="scrap-avatar" aria-hidden="true">${initial(s.name)}</div>
-
-          <div class="scrap-body">
-            <div class="scrap-head">
-              <span class="name">${s.name}</span>
-              <span class="date">${s.when}</span>
-            </div>
-
-            <p>${s.text}</p>
-          </div>
-        </div>`
-        )
-        .join("")}
-    </div>`,
+  </div>
+`,
 
   photos: () => {
   const route = location.hash;
