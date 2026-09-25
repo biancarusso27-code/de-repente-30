@@ -902,25 +902,25 @@ const pages = {
 
         <div class="photo-grid">
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 01</div>
-            LOOK 01
-          </div>
+           <div class="photo">
+          <img src="imagens/looks/looks patricinha-playboy/patricinha-01.jpg">
+          LOOK 01
+        </div>
 
           <div class="photo">
-            <div class="placeholder-photo">LOOK 02</div>
-            LOOK 02
-          </div>
+          <img src="imagens/looks/looks patricinha-playboy/patricinha-02.jpg">
+          LOOK 02
+        </div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 03</div>
-            LOOK 03
-          </div>
+        <div class="photo">
+          <img src="imagens/looks/looks patricinha-playboy/patricinha-03.jpg">
+          LOOK 03
+        </div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 04</div>
-            LOOK 04
-          </div>
+        <div class="photo">
+          <img src="imagens/looks/looks patricinha-playboy/patricinha-04.jpg">
+          LOOK 04
+        </div>
 
         </div>
       </div>
@@ -941,24 +941,24 @@ const pages = {
         <div class="photo-grid">
 
           <div class="photo">
-            <div class="placeholder-photo">LOOK 01</div>
-            LOOK 01
-          </div>
+          <img src="imagens/looks/looks patricinha-playboy/playboy-masculino-01.jpg">
+          LOOK 01
+        </div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 02</div>
-            LOOK 02
-          </div>
+        <div class="photo">
+          <img src="imagens/looks/looks patricinha-playboy/playboy-masculino-02.jpg">
+          LOOK 02
+        </div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 03</div>
-            LOOK 03
-          </div>
+        <div class="photo">
+          <img src="imagens/looks/looks patricinha-playboy/playboy-masculino-03.jpg">
+          LOOK 03
+        </div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 04</div>
-            LOOK 04
-          </div>
+        <div class="photo">
+          <img src="imagens/looks/looks patricinha-playboy/playboy-masculino-04.jpg">
+          LOOK 04
+        </div>
 
         </div>
       </div>
