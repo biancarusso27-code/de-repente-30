@@ -796,22 +796,22 @@ const pages = {
         <div class="photo-grid">
 
          <div class="photo">
-          <img src="imagens/looks/casual-geek/casual-feminino-01.jpg">
+          <img src="imagens/looks/looks casual-geek/casual-feminino-01.jpg">
           CASUAL 01
         </div>
         
            <div class="photo">
-          <img src="imagens/looks/casual-geek/casual-feminino-02.jpg">
+          <img src="imagens/looks/looks casual-geek/casual-feminino-02.jpg">
           CASUAL 02
         </div>
 
         <div class="photo">
-          <img src="imagens/looks/casual-geek/geek-feminino-03.jpg">
+          <img src="imagens/looks/looks casual-geek/geek-feminino-03.jpg">
           GEEK 01
         </div>
 
         <div class="photo">
-          <img src="imagens/looks/casual-geek/geek-feminino-04.jpg">
+          <img src="imagens/looks/looks casual-geek/geek-feminino-04.jpg">
           GEEK 02
         </div>
 
@@ -834,22 +834,22 @@ const pages = {
         <div class="photo-grid">
 
           <div class="photo">
-          <img src="imagens/looks/casual-geek/casual-masculino-01.jpg">
+          <img src="imagens/looks/looks casual-geek/casual-masculino-01.jpg">
           CASUAL 01
         </div>
 
         <div class="photo">
-          <img src="imagens/looks/casual-geek/casual-masculino-02.jpg">
+          <img src="imagens/looks/looks casual-geek/casual-masculino-02.jpg">
           CASUAL 02
         </div>
 
         <div class="photo">
-          <img src="imagens/looks/casual-geek/geek-masculino-03.jpg">
+          <img src="imagens/looks/looks casual-geek/geek-masculino-03.jpg">
           GEEK 01
         </div>
 
         <div class="photo">
-          <img src="imagens/looks/casual-geek/geek-masculino-04.jpg">
+          <img src="imagens/looks/looks casual-geek/geek-masculino-04.jpg">
           GEEK 02
         </div>
 
