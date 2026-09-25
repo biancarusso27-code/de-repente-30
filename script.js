@@ -34,7 +34,7 @@ const outfits = [
   "Y2K / Pop",
   "Emo / Rock",
   "Skater",
-  "Casual / Geek 2000s",
+  " / Geek 2000s",
   "Patricinha / Playboy"
 ];
 
@@ -795,29 +795,25 @@ const pages = {
 
         <div class="photo-grid">
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 01</div>
-            LOOK 01
-            <div>CASUAL</div>
-          </div>
+         <div class="photo">
+          <img src="imagens/looks/casual-geek/casual-feminino-01.jpg">
+          CASUAL 01
+        </div>
+        
+           <div class="photo">
+          <img src="imagens/looks/casual-geek/casual-feminino-02.jpg">
+          CASUAL 02
+        </div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 02</div>
-            LOOK 02
-            <div>GEEK</div>
-          </div>
+        <div class="photo">
+          <img src="imagens/looks/casual-geek/geek-feminino-03.jpg">
+          GEEK 01
+        </div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 03</div>
-            LOOK 03
-            <div>CASUAL</div>
-          </div>
-
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 04</div>
-            LOOK 04
-            <div>GEEK</div>
-          </div>
+        <div class="photo">
+          <img src="imagens/looks/casual-geek/geek-feminino-04.jpg">
+          GEEK 02
+        </div>
 
         </div>
       </div>
@@ -838,28 +834,24 @@ const pages = {
         <div class="photo-grid">
 
           <div class="photo">
-            <div class="placeholder-photo">LOOK 01</div>
-            LOOK 01
-            <div>CASUAL</div>
-          </div>
+          <img src="imagens/looks/casual-geek/casual-masculino-01.jpg">
+          CASUAL 01
+        </div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 02</div>
-            LOOK 02
-            <div>GEEK</div>
-          </div>
+        <div class="photo">
+          <img src="imagens/looks/casual-geek/casual-masculino-02.jpg">
+          CASUAL 02
+        </div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 03</div>
-            LOOK 03
-            <div>CASUAL</div>
-          </div>
+        <div class="photo">
+          <img src="imagens/looks/casual-geek/geek-masculino-03.jpg">
+          GEEK 01
+        </div>
 
-          <div class="photo">
-            <div class="placeholder-photo">LOOK 04</div>
-            LOOK 04
-            <div>GEEK</div>
-          </div>
+        <div class="photo">
+          <img src="imagens/looks/casual-geek/geek-masculino-04.jpg">
+          GEEK 02
+        </div>
 
         </div>
       </div>
