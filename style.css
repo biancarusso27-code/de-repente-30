@@ -10,7 +10,7 @@
   --panel-bg: #f1f5f8;
   --box-bg: #fff;
   --box-head-bg: #dce8f5;      /* azulzinho clássico dos títulos de caixa */
-  --border: #c4d0dc;
+  --border: #c4d0dc;.avatar 
   --border-soft: #e1e6eb;
   --text: #444;
   --text-strong: #333;
@@ -150,8 +150,8 @@ a:focus-visible,
 }
 
 .avatar {
-  width: 82px;
-  height: 82px;
+  width: 110px;
+  height: 110px;
   display: grid;
   place-items: center;
   margin-bottom: 7px;
