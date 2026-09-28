@@ -107,7 +107,14 @@ function getGuestGroup() {
   return guestGroups.find((item) => item.id === savedId) || null;
 }
 
-const friends = ["Bianca", "Guilherme", "Rose", "Emerson", "Matheus", "Nicole"];
+const friends = [
+  { name: "Nicole", photo: "imagens/amigos/nicole.jpg" },
+  { name: "Alicia", photo: "imagens/amigos/alicia.jpg" },
+  { name: "Rodrigo", photo: "imagens/amigos/rodrigo.jpg" },
+  { name: "Mariama", photo: "imagens/amigos/mariama.jpg" },
+  { name: "Monique", photo: "imagens/amigos/monique.jpg" },
+  { name: "Tio Anselmo", photo: "imagens/amigos/anselmo.jpg" },
+];
 
 const allFriends = [
   "Guilherme",
@@ -362,17 +369,17 @@ const pages = {
 
           <div class="friend-grid">
             ${friends
-              .slice(0, 6)
-              .map(
-                (f) =>
-                  `<div class="friend">
-                    <div class="friend-avatar" aria-hidden="true">
-                      ${initial(f)}
-                    </div>
-                    ${f}
-                  </div>`
-              )
-              .join("")}
+  .slice(0, 6)
+  .map(
+    (f) =>
+      `<div class="friend">
+        <div class="friend-avatar">
+          <img src="${f.photo}" alt="${f.name}">
+        </div>
+        ${f.name}
+      </div>`
+  )
+  .join("")}
           </div>
 
           <p>
