@@ -1240,7 +1240,7 @@ profile: () => `
       <div class="box-title">meus amigos</div>
 
       <div class="friend-grid">
-        ${friends
+        ${allFriends
           .map(
             (f) =>
               `<div class="friend"><div class="friend-avatar" aria-hidden="true">${initial(f)}</div>${f}</div>`
