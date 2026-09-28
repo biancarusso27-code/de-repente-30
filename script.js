@@ -1482,6 +1482,8 @@ function currentPage() {
 function render() {
   const page = currentPage();
 
+   getGuestGroup();
+
   app.innerHTML = pages[page]();
 
   addressBar.textContent = `http://www.orkut.com/${addresses[page]}`;
