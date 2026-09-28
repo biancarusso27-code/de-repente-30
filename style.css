@@ -728,3 +728,21 @@ footer {
     gap: 10px;
   }
 }
+
+/* FOTO PRINCIPAL DO PERFIL */
+.profile-card .avatar {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  margin: 0 auto 6px;
+  border: 1px solid #b7c9da;
+  background: #fff;
+}
+
+.profile-card .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
