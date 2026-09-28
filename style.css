@@ -150,8 +150,8 @@ a:focus-visible,
 }
 
 .avatar {
-  width: 110px;
-  height: 110px;
+  width: 150px;
+  height: 150px;
   display: grid;
   place-items: center;
   margin-bottom: 7px;
