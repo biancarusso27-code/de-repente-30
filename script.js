@@ -501,6 +501,44 @@ profile: () => `
   </div>
 `,
 
+    scraps: () => `
+    <h2 class="page-title">Recados</h2>
+
+    <div class="box">
+      <div class="box-title">meus recados</div>
+
+      ${scraps
+        .map(
+          (s) => `
+            <div class="scrap">
+              <div class="scrap-avatar" aria-hidden="true">
+                ${initial(s.name)}
+              </div>
+
+              <div class="scrap-body">
+                <div class="scrap-head">
+                  <span class="name">${s.name}</span>
+                  <span class="date">${s.when}</span>
+                </div>
+
+                <p>${s.text}</p>
+
+                <div class="scrap-actions">
+                  <a href="#/scraps">responder</a>
+                  |
+                  <a href="#/scraps">apagar</a>
+                </div>
+              </div>
+            </div>
+          `
+        )
+        .join("")}
+
+    </div>
+  `,
+
+        
+
   photos: () => {
   const route = location.hash;
 
