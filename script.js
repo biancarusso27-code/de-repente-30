@@ -216,6 +216,15 @@ const allFriends = [
   "Waleska"
 ];
 
+const friendPhotos = {
+  "Nicole Lazinski": "imagens/amigos/nicole.jpg",
+  "Alicia": "imagens/amigos/alicia.jpg",
+  "Rodrigo": "imagens/amigos/rodrigo.jpg",
+  "Mariama": "imagens/amigos/mariama.jpg",
+  "Moni": "imagens/amigos/monique.jpg",
+  "Tio Anselmo": "imagens/amigos/anselmo.jpg",
+};
+
 const communities = [
   { name: "EU JÁ TIVE MSN", members: "578.432" },
   { name: "EU VIVI OS ANOS 2000", members: "1.234.567" },
