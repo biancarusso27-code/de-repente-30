@@ -485,10 +485,12 @@ profile: () => `
     </div>
 
     <div class="orkut-profile-tabs">
-      <span class="active">social</span>
-      <span>profissional</span>
-      <span>pessoal</span>
-    </div>
+  <span class="active">social</span>
+  <span>profissional</span>
+  <span>pessoal</span>
+
+  <button class="profile-edit-btn" type="button">editar</button>
+</div>
 
     <div class="orkut-profile-table">
 
