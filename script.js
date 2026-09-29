@@ -463,7 +463,7 @@ profile: () => `
   <div class="orkut-profile">
 
     <div class="orkut-profile-header">
-      <h2>BiiBiCa</h2>
+      <h2>Bianca</h2>
       <p>Início &gt; Meu perfil</p>
     </div>
 
