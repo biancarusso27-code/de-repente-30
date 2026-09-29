@@ -300,7 +300,7 @@ function rsvpStatus() {
 
 const pages = {
   home: () => `
-    <h2 class="page-title">Bem-vindo(a), BIBICA</h2>
+    <h2 class="page-title">Bem-vindo(a), Bianca</h2>
     
 <div class="orkut-stats">
   <a href="#/scraps">
@@ -350,7 +350,7 @@ const pages = {
   </p>
 
   <p>
-    <strong>De:</strong> ✨ BiiBiCa ✨
+    <strong>De:</strong> Bianca
   </p>
 
   <p>
@@ -367,7 +367,7 @@ const pages = {
   <div class="update-item">
     <span class="update-icon">📷</span>
     <div>
-      <a href="#/photos"><strong>Bibica</strong></a> adicionou novas fotos
+      <a href="#/photos"><strong>Bianca</strong></a> adicionou novas fotos
       <small>hoje</small>
     </div>
   </div>
@@ -375,7 +375,7 @@ const pages = {
   <div class="update-item">
     <span class="update-icon">✏️</span>
     <div>
-      <a href="#/scraps"><strong>Bibica</strong></a> recebeu novos recados
+      <a href="#/scraps"><strong>Bianca</strong></a> recebeu novos recados
       <small>hoje</small>
     </div>
   </div>
@@ -383,7 +383,7 @@ const pages = {
   <div class="update-item">
     <span class="update-icon">♥</span>
     <div>
-      <strong>Bibica</strong> atualizou o perfil
+      <strong>Bianca</strong> atualizou o perfil
       <small>ontem</small>
     </div>
   </div>
@@ -391,7 +391,7 @@ const pages = {
   <div class="update-item">
     <span class="update-icon">👥</span>
     <div>
-      <a href="#/friends"><strong>Bibica</strong></a> tem novos amigos
+      <a href="#/friends"><strong>Bianca</strong></a> tem novos amigos
       <small>ontem</small>
     </div>
   </div>
@@ -399,7 +399,7 @@ const pages = {
   <div class="update-item">
     <span class="update-icon">💬</span>
     <div>
-      <a href="#/testimonials"><strong>Bibica</strong></a> recebeu um novo depoimento
+      <a href="#/testimonials"><strong>Bianca</strong></a> recebeu um novo depoimento
       <small>27/09</small>
     </div>
   </div>
