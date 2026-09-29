@@ -1350,20 +1350,32 @@ profile: () => `
   </div>`,
 
   friends: () => `
-    <h2 class="page-title">Amigos</h2>
+  <h2 class="page-title">Amigos</h2>
 
-    <div class="box">
-      <div class="box-title">meus amigos</div>
+  <div class="box">
+    <div class="box-title">meus amigos</div>
 
-      <div class="friend-grid">
-        ${allFriends
-          .map(
-            (f) =>
-              `<div class="friend"><div class="friend-avatar" aria-hidden="true">${initial(f)}</div>${f}</div>`
-          )
-          .join("")}
-      </div>
-    </div>`,
+    <div class="friend-grid">
+      ${allFriends
+        .map((f) => {
+          const photo = friendPhotos[f];
+
+          return `
+            <div class="friend">
+              <div class="friend-avatar" aria-hidden="true">
+                ${
+                  photo
+                    ? `<img src="${photo}" alt="${f}">`
+                    : initial(f)
+                }
+              </div>
+              ${f}
+            </div>
+          `;
+        })
+        .join("")}
+    </div>
+  </div>`,
 
   communities: () => `
     <h2 class="page-title">Comunidades</h2>
