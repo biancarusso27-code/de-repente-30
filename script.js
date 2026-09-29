@@ -117,7 +117,7 @@ const friends = [
 ];
 
 const allFriends = [
-  "Guilherme",
+  { name: "Guilherme", id: "guilherme-namo" },
   "Rose",
   "Emerson",
   "Matheus",
@@ -223,6 +223,7 @@ const friendPhotos = {
   "Mariama": "imagens/amigos/mariama.jpg",
   "Moni": "imagens/amigos/monique.jpg",
   "Tio Anselmo": "imagens/amigos/anselmo.jpg",
+  "Guilherme": "imagens/amigos/guilherme.jpg",
 };
 
 const communities = [
@@ -1349,7 +1350,7 @@ profile: () => `
 
   </div>`,
 
-  friends: () => `
+ friends: () => `
   <h2 class="page-title">Amigos</h2>
 
   <div class="box">
@@ -1358,18 +1359,21 @@ profile: () => `
     <div class="friend-grid">
       ${allFriends
         .map((f) => {
-          const photo = friendPhotos[f];
+          const name = typeof f === "string" ? f : f.name;
+          const id = typeof f === "string" ? f : f.id;
+
+          const photo = friendPhotos[id] || friendPhotos[name];
 
           return `
             <div class="friend">
               <div class="friend-avatar" aria-hidden="true">
                 ${
                   photo
-                    ? `<img src="${photo}" alt="${f}">`
-                    : initial(f)
+                    ? `<img src="${photo}" alt="${name}">`
+                    : initial(name)
                 }
               </div>
-              ${f}
+              ${name}
             </div>
           `;
         })
