@@ -860,20 +860,3 @@ footer {
 .orkut-stats a:hover span {
   text-decoration: underline;
 }
-/* ===== FIX DEFINITIVO - STATS HOME WEB ===== */
-
-.orkut-stats {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: flex-start !important;
-  flex-wrap: nowrap !important;
-}
-
-.orkut-stats > a,
-.orkut-stats > div {
-  display: flex !important;
-  flex-direction: column !important;
-  width: auto !important;
-  min-width: auto !important;
-  flex: 0 0 auto !important;
-}
