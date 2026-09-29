@@ -301,31 +301,47 @@ function rsvpStatus() {
 const pages = {
   home: () => `
     <h2 class="page-title">Bem-vindo(a), BIBICA</h2>
-    <div class="orkut-stats">
-  <a href="#/scraps">
-    <span>recados</span>
-    <strong>✏️ 30</strong>
+<div class="orkut-stats">
+  <a href="#/scraps" class="orkut-stat">
+    <span class="stat-label">recados</span>
+    <span class="stat-value">
+      <span class="stat-icon">✎</span>
+      <b>30</b>
+    </span>
   </a>
 
-  <a href="#/photos">
-    <span>fotos</span>
-    <strong>📷 7</strong>
+  <a href="#/photos" class="orkut-stat">
+    <span class="stat-label">fotos</span>
+    <span class="stat-value">
+      <span class="stat-icon">▣</span>
+      <b>7</b>
+    </span>
   </a>
 
-  <div>
-    <span>fotos comigo</span>
-    <strong>◇ 10</strong>
+  <div class="orkut-stat">
+    <span class="stat-label">fotos comigo</span>
+    <span class="stat-value">
+      <span class="stat-icon">◇</span>
+      <b>10</b>
+    </span>
   </div>
 
-  <div>
-    <span>fãs</span>
-    <strong>⭐ 30</strong>
+  <div class="orkut-stat">
+    <span class="stat-label">fãs</span>
+    <span class="stat-value">
+      <span class="stat-icon">★</span>
+      <b>30</b>
+    </span>
   </div>
 
-  <div>
-    <span>mensagens</span>
-    <strong>✉️ 27</strong>
+  <div class="orkut-stat">
+    <span class="stat-label">mensagens</span>
+    <span class="stat-value">
+      <span class="stat-icon">▭</span>
+      <b>27</b>
+    </span>
   </div>
+
 </div>
 <div class="profile-views">
   <strong>Visualizações de perfil:</strong><br>
