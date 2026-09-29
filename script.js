@@ -359,7 +359,49 @@ const pages = {
     <a href="#/testimonials">ler depoimento →</a>
   </p>
 </div>
+<div class="box home-updates">
+  <div class="box-title">atualizações</div>
 
+  <div class="update-item">
+    <span class="update-icon">📷</span>
+    <div>
+      <a href="#/photos"><strong>Bibica</strong></a> adicionou novas fotos
+      <small>hoje</small>
+    </div>
+  </div>
+
+  <div class="update-item">
+    <span class="update-icon">✏️</span>
+    <div>
+      <a href="#/scraps"><strong>Bibica</strong></a> recebeu novos recados
+      <small>hoje</small>
+    </div>
+  </div>
+
+  <div class="update-item">
+    <span class="update-icon">♥</span>
+    <div>
+      <strong>Bibica</strong> atualizou o perfil
+      <small>ontem</small>
+    </div>
+  </div>
+
+  <div class="update-item">
+    <span class="update-icon">👥</span>
+    <div>
+      <a href="#/friends"><strong>Bibica</strong></a> tem novos amigos
+      <small>ontem</small>
+    </div>
+  </div>
+
+  <div class="update-item">
+    <span class="update-icon">💬</span>
+    <div>
+      <a href="#/testimonials"><strong>Bibica</strong></a> recebeu um novo depoimento
+      <small>27/09</small>
+    </div>
+  </div>
+</div>
       </div>
 
       <div>
