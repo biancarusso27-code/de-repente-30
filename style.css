@@ -10,7 +10,7 @@
   --panel-bg: #f1f5f8;
   --box-bg: #fff;
   --box-head-bg: #dce8f5;      /* azulzinho clássico dos títulos de caixa */
-  --border: #c4d0dc;.avatar 
+  --border: #c4d0dc;
   --border-soft: #e1e6eb;
   --text: #444;
   --text-strong: #333;
@@ -357,7 +357,7 @@ a:focus-visible,
   margin-bottom: 5px;
   border-radius: 3px;
 }
-..friend-avatar {
+.friend-avatar {
   width: 72px;
   height: 72px;
   overflow: hidden;
@@ -371,7 +371,7 @@ a:focus-visible,
   height: 72px;
   object-fit: cover;
   display: block;
-} {
+}
   width: 56px;
   height: 56px;
   display: grid;
