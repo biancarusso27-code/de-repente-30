@@ -905,32 +905,3 @@ footer {
 .profile-line span:last-child {
   line-height: 1.25;
 }
-/* ===== REPUTAÇÃO "LEGAL" - CUBINHOS ORKUT ===== */
-
-.orkut-cool-icons {
-  display: flex;
-  gap: 2px;
-  margin-top: 2px;
-}
-
-.orkut-cool-icons i {
-  display: block;
-  width: 12px;
-  height: 10px;
-  box-sizing: border-box;
-
-  background: linear-gradient(
-    135deg,
-    #dff8ff 0%,
-    #b8e7f2 48%,
-    #78bdd1 49%,
-    #9dd8e7 100%
-  );
-
-  border: 1px solid #62a9bd;
-  border-radius: 2px;
-
-  box-shadow:
-    inset 2px 2px 0 rgba(255,255,255,.75),
-    inset -2px -2px 0 rgba(65,145,170,.18);
-}
