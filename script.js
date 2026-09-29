@@ -480,7 +480,12 @@ profile: () => `
       <span>vídeos <strong>5</strong></span>
       <span>fãs <strong>⭐ 30</strong></span>
       <span>confiável <strong>😊😊😊</strong></span>
-      <span>legal <strong>🧊🧊🧊</strong></span>
+     <span>
+  legal
+  <strong class="orkut-cool-icons">
+    <i></i><i></i><i></i>
+  </strong>
+</span>
       <span>sexy <strong>❤️❤️❤️</strong></span>
     </div>
 
