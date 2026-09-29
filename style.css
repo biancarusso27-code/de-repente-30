@@ -860,3 +860,13 @@ footer {
 .orkut-stats a:hover span {
   text-decoration: underline;
 }
+/* ===== NOME DO PERFIL ===== */
+
+.orkut-profile-header h2 {
+  margin: 0 0 4px;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #333;
+}
