@@ -762,14 +762,31 @@ footer {
   overflow-wrap: anywhere;
 }
 
-@media (max-width: 600px) {
-  .profile-line {
-    grid-template-columns: 38% 62%;
-    padding: 5px 4px;
+/* ===== CORREÇÃO HOME NO CELULAR ===== */
+
+@media (max-width: 700px) {
+  .home-sections {
+    display: block;
+    width: 100%;
   }
 
-  .orkut-profile-stats {
-    gap: 10px;
+  .home-sections > div {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .home-sections .box {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+  }
+
+  .home-sections .friend-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .home-sections .community-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
