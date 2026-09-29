@@ -473,29 +473,32 @@ footer {
   .side-nav a { white-space: nowrap; border-bottom: 0; border-right: 1px solid var(--border-soft); }
   .side-nav a:last-child { border-right: 0; }
   .mini-box { display: none; }
-  .content { padding: 14px 14px 28px; }
+   .content { padding: 14px 14px 28px; }
   .big-date { grid-template-columns: 1fr; }
-   
-     /* ---------- Home no celular ---------- */
-  .home-grid {
+
+  /* ---------- Home no celular ---------- */
+  .home-sections {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
-  .home-side {
+  .home-sections > div {
     min-width: 0;
     width: 100%;
   }
 
-  .friends-grid {
+  .friend-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
   }
 
   .friend {
     min-width: 0;
   }
 
-  .communities-grid {
+  .community-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
   }
 }
 
