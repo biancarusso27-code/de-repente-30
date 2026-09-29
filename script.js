@@ -114,7 +114,7 @@ const friends = [
   { name: "Mariama", photo: "imagens/amigos/mariama.jpg" },
   { name: "Monique", photo: "imagens/amigos/monique.jpg" },
   { name: "Tio Anselmo", photo: "imagens/amigos/anselmo.jpg" },
-];
+  ];
 
 const allFriends = [
   { name: "Guilherme", id: "guilherme-namo" },
@@ -223,7 +223,7 @@ const friendPhotos = {
   "Mariama": "imagens/amigos/mariama.jpg",
   "Moni": "imagens/amigos/monique.jpg",
   "Tio Anselmo": "imagens/amigos/anselmo.jpg",
-  "Guilherme": "imagens/amigos/guilherme.jpg",
+  "guilherme-namo": "imagens/amigos/guilherme.jpg",
 };
 
 const communities = [
