@@ -475,6 +475,28 @@ footer {
   .mini-box { display: none; }
   .content { padding: 14px 14px 28px; }
   .big-date { grid-template-columns: 1fr; }
+   
+     /* ---------- Home no celular ---------- */
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-side {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .friends-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .friend {
+    min-width: 0;
+  }
+
+  .communities-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /* ========================================
