@@ -301,8 +301,8 @@ function rsvpStatus() {
 const pages = {
   home: () => `
     <h2 class="page-title">Bem-vindo(a), BIBICA</h2>
+    
 <div class="orkut-stats">
- <div class="orkut-stats">
   <a href="#/scraps">
     <span>recados</span>
     <strong>✏️ 30</strong>
@@ -328,7 +328,7 @@ const pages = {
     <strong>✉️ 27</strong>
   </div>
 </div>
-</div>
+
 <div class="profile-views">
   <strong>Visualizações de perfil:</strong><br>
   Total: 2.727, Última Semana: 30, Ontem: 27
