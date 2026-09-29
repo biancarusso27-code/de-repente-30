@@ -1650,33 +1650,38 @@ async function deliverRsvp(data) {
   }
 
   if (CONFIG.whatsapp) {
-    const answers = data.guests
-      .map(
-        (guest) =>
-          `${guest.name}: ${
-            guest.going === "yes"
-              ? "vou sim"
-              : "não vou conseguir"
-          }`
-      )
-      .join(" | ");
+  const confirmed = data.guests
+    .filter((guest) => guest.going === "yes")
+    .map((guest) => `• ${guest.name}`)
+    .join("\n");
 
-    const message = data.message
-      ? ` Recado: ${data.message}`
-      : "";
+  const declined = data.guests
+    .filter((guest) => guest.going === "no")
+    .map((guest) => `• ${guest.name}`)
+    .join("\n");
 
-    const msg =
-      `Oi, Bibica! Sobre o "${EV.title}" (${EV.date}): ` +
-      `${answers}.${message}`;
+  const message = data.message
+    ? `\n\n💬 *Recado:*\n${data.message}`
+    : "";
 
-    window.open(
-      `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`,
-      "_blank",
-      "noopener"
-    );
+  const msg =
+    `💌 *RSVP — ${EV.title.toUpperCase()}*\n\n` +
+    `✅ *CONFIRMADOS*\n` +
+    `${confirmed || "• Nenhum"}\n\n` +
+    `❌ *NÃO IRÃO*\n` +
+    `${declined || "• Nenhum"}` +
+    `${message}\n\n` +
+    `📅 ${EV.date}\n` +
+    `🕖 ${EV.time}`;
 
-    return "whatsapp";
-  }
+  window.open(
+    `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`,
+    "_blank",
+    "noopener"
+  );
+
+  return "whatsapp";
+}
 
   return "prototype";
 }
