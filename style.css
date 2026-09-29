@@ -478,14 +478,21 @@ footer {
 
   /* ---------- Home no celular ---------- */
   .home-sections {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
+  display: block;
+  width: 100%;
+}
 
-  .home-sections > div {
-    min-width: 0;
-    width: 100%;
-  }
+.home-sections > div {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+
+.home-sections > div > .box {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+}
 
   .friend-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
