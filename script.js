@@ -528,9 +528,9 @@ profile: () => `
         <span>quem sou eu:</span>
         <span>
           Difícil falar de mim... só convivendo pra saber! ;D
-          <br><br>
+          <br>
           Amo minha família, meus amigos e curtir a vida ♥
-          <br><br>
+          <br>
           Contando os dias para os 30!
         </span>
       </div>
