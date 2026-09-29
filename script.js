@@ -475,14 +475,14 @@ profile: () => `
     </div>
 
     <div class="orkut-profile-stats">
-      <span>recados <strong>30</strong></span>
-      <span>fotos <strong>40</strong></span>
-      <span>vídeos <strong>5</strong></span>
-      <span>fãs <strong>★42</strong></span>
-      <span>confiável <strong>😊😊😊</strong></span>
-      <span>legal <strong>👍👍👍</strong></span>
-      <span>sexy <strong>❤️❤️❤️</strong></span>
-    </div>
+  <span>recados <strong>30</strong></span>
+  <span>fotos <strong>7</strong></span>
+  <span>vídeos <strong>5</strong></span>
+  <span>fãs <strong>⭐ 30</strong></span>
+  <span>confiável <strong>😊😊😊</strong></span>
+  <span>legal <strong>🧊🧊🧊</strong></span>
+  <span>sexy <strong>❤️❤️❤️</strong></span>
+</div>
 
     <div class="orkut-profile-tabs">
       <span class="active">social</span>
