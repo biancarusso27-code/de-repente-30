@@ -890,3 +890,18 @@ footer {
   line-height: 14px;
   cursor: default;
 }
+/* ===== PERFIL - LINHAS MAIS ORKUT ===== */
+
+.profile-line {
+  padding: 3px 8px;
+  line-height: 1.25;
+  min-height: 0;
+}
+
+.profile-line span:first-child {
+  padding-right: 12px;
+}
+
+.profile-line span:last-child {
+  line-height: 1.25;
+}
