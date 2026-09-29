@@ -474,15 +474,15 @@ profile: () => `
       </select>
     </div>
 
-    <div class="orkut-profile-stats">
-  <span>recados <strong>30</strong></span>
-  <span>fotos <strong>7</strong></span>
-  <span>vídeos <strong>5</strong></span>
-  <span>fãs <strong>⭐ 30</strong></span>
-  <span>confiável <strong>😊😊😊</strong></span>
-  <span>legal <strong>🧊🧊🧊</strong></span>
-  <span>sexy <strong>❤️❤️❤️</strong></span>
-</div>
+   <div class="orkut-profile-stats">
+      <span>recados <strong>30</strong></span>
+      <span>fotos <strong>7</strong></span>
+      <span>vídeos <strong>5</strong></span>
+      <span>fãs <strong>⭐ 30</strong></span>
+      <span>confiável <strong>😊😊😊</strong></span>
+      <span>legal <strong>🧊🧊🧊</strong></span>
+      <span>sexy <strong>❤️❤️❤️</strong></span>
+    </div>
 
     <div class="orkut-profile-tabs">
       <span class="active">social</span>
@@ -504,7 +504,7 @@ profile: () => `
 
       <div class="profile-line">
         <span>idade:</span>
-        <span>29 (quase 30!)</span>
+        <span>29</span>
       </div>
 
       <div class="profile-line">
@@ -519,13 +519,12 @@ profile: () => `
 
       <div class="profile-line">
         <span>interesses no Orkut:</span>
-        <span>anos 2000, música, moda e nostalgia</span>
+        <span>música, moda, fotografia, viagens e anos 2000</span>
       </div>
 
-      <div class="profile-line">
+       <div class="profile-line">
         <span>quem sou eu:</span>
         <span>
-          ~*~ BiiBiCa ~*~ <br><br>
           Difícil falar de mim... só convivendo pra saber! ;D
           <br><br>
           Amo minha família, meus amigos e curtir a vida ♥
@@ -535,13 +534,28 @@ profile: () => `
       </div>
 
       <div class="profile-line">
+        <span>filmes:</span>
+        <span>Harry Potter, disney e clássicos dos anos 2000</span>
+      </div>
+
+      <div class="profile-line">
         <span>música:</span>
         <span>pop, rock, emo e tudo que tocava no MSN 🎧</span>
       </div>
 
       <div class="profile-line">
+        <span>livros:</span>
+        <span>Harry Potter</span>
+      </div>
+      
+     <div class="profile-line">
+        <span>paixões:</span>
+        <span>moda, fotografia, música, viajar e gastronomia</span>
+      </div>
+
+      <div class="profile-line">
         <span>estilo:</span>
-        <span>fashionista, anos 2000 e um pouco de tudo!</span>
+        <span>fashionista, confortável e um pouco de tudo!</span>
       </div>
 
       <div class="profile-line">
