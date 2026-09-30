@@ -905,3 +905,15 @@ footer {
 .profile-line span:last-child {
   line-height: 1.25;
 }
+.community-photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 6px;
+  border: 1px solid #c8c8d8;
+}
+
+.community {
+  text-align: center;
+}
