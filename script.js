@@ -227,12 +227,36 @@ const friendPhotos = {
 };
 
 const communities = [
-  { name: "EU JÁ TIVE MSN", members: "578.432" },
-  { name: "EU VIVI OS ANOS 2000", members: "1.234.567" },
-  { name: "SUMMER ELETROHITS É CULTURA", members: "98.421" },
-  { name: "EMO NÃO MORREU", members: "104.000" },
-  { name: "FIZ 30 E NÃO ESTOU PREPARADA", members: "30" },
-  { name: "EU NÃO SEI DANÇAR MAS VOU", members: "82" },
+  {
+    name: "EU JÁ TIVE MSN",
+    members: "578.432",
+    photo: "imagens/comunidades/msn.jpg"
+  },
+  {
+    name: "EU VIVI OS ANOS 2000",
+    members: "1.234.567",
+    photo: "imagens/comunidades/anos-2000.jpg"
+  },
+  {
+    name: "SUMMER ELETROHITS É CULTURA",
+    members: "98.421",
+    photo: "imagens/comunidades/summer-eletrohits.jpg"
+  },
+  {
+    name: "EMO NÃO MORREU",
+    members: "104.000",
+    photo: "imagens/comunidades/emo.jpg"
+  },
+  {
+    name: "FIZ 30 E NÃO ESTOU PREPARADA",
+    members: "30",
+    photo: "imagens/comunidades/30-anos.jpg"
+  },
+  {
+    name: "EU NÃO SEI DANÇAR MAS VOU",
+    members: "82",
+    photo: "imagens/comunidades/dancar.jpg"
+  },
 ];
 
 const EV = CONFIG.event;
@@ -1382,18 +1406,27 @@ profile: () => `
   </div>`,
 
   communities: () => `
-    <h2 class="page-title">Comunidades</h2>
+  <h2 class="page-title">Comunidades</h2>
 
-    <div class="box">
-      <div class="community-grid">
-        ${communities
-          .map(
-            (c) =>
-              `<div class="community"><strong>${c.name}</strong><p>${c.members} membros</p></div>`
-          )
-          .join("")}
-      </div>
-    </div>`,
+  <div class="box">
+    <div class="community-grid">
+      ${communities
+        .map(
+          (c) => `
+            <div class="community">
+              <img
+                class="community-photo"
+                src="${c.photo}"
+                alt="${c.name}"
+              >
+              <strong>${c.name}</strong>
+              <p>${c.members} membros</p>
+            </div>
+          `
+        )
+        .join("")}
+    </div>
+  </div>`,
 
   event: () => `
   <h2 class="page-title">Evento</h2>
