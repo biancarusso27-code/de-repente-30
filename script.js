@@ -1516,10 +1516,6 @@ profile: () => `
               (name, index) => `
                 <div class="guest-card">
 
-                  <div class="guest-avatar" aria-hidden="true">
-                    ${initial(name)}
-                  </div>
-
                   <div class="guest-info">
                     <strong>${name}</strong>
 
