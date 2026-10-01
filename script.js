@@ -118,7 +118,7 @@ const friends = [
 
 const allFriends = [
   { name: "Guilherme", id: "guilherme-namo" },
-  "Rose",
+  { name: "Rose", id: "rose-mae" },
   "Emerson",
   "Matheus",
   "Henrique",
@@ -224,6 +224,15 @@ const friendPhotos = {
   "Moni": "imagens/amigos/monique.jpg",
   "Tio Anselmo": "imagens/amigos/anselmo.jpg",
   "guilherme-namo": "imagens/amigos/guilherme.jpg",
+  "Emerson": "imagens/amigos/emerson.jpg",
+"Matheus": "imagens/amigos/matheus.jpg",
+"Henrique": "imagens/amigos/henrique.jpg",
+"Vó": "imagens/amigos/vo.jpg",
+"Vô": "imagens/amigos/vovo.jpg",
+"Tia Preta": "imagens/amigos/tia-preta.jpg",
+"Tio Nelson": "imagens/amigos/tio-nelson.jpg",
+"Lorena": "imagens/amigos/lorena.jpg",
+  "rose-mae": "imagens/amigos/rose-mae.jpg",
 };
 
 const communities = [
