@@ -448,6 +448,7 @@ footer {
 }
 
 /* ---------- Telas pequenas ---------- */
+@media (max-width: 700px) {
 .orkut-header {
   display: flex;
   flex-wrap: nowrap;
@@ -464,7 +465,7 @@ footer {
 
 .orkut-header::-webkit-scrollbar {
   display: none;
-} {
+} 
   /* a moldura de navegador só ocupa espaço no celular */
   .browser-titlebar,
   .browser-toolbar { display: none; }
@@ -477,7 +478,6 @@ footer {
     box-shadow: none;
   }
 
-  .orkut-header { grid-template-columns: 1fr; gap: 6px; }
   .orkut-layout { grid-template-columns: minmax(0, 1fr); }
   /* barra lateral compacta: o convite precisa aparecer logo na primeira tela */
   .sidebar { padding: 10px 12px; border-right: 0; border-bottom: 1px solid var(--border); }
