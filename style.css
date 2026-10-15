@@ -24,7 +24,7 @@
   --radius: 6px;               /* cantos arredondados: assinatura do Orkut */
 
 --font-ui: Arial, Helvetica, sans-serif;
---font-title: Arial, Helvetica, sans-serif;
+--font-title: Georgia, "Times New Roman", serif;
 }
 
 * { box-sizing: border-box; }
@@ -121,7 +121,7 @@ a:focus-visible,
 .orkut-logo {
   display: inline-block;
   color: var(--brand);
-  font: bold italic 28px var(--font-title);
+  font: bold italic 28px var(t-title);
   letter-spacing: -2px;
 }
 
@@ -160,7 +160,7 @@ a:focus-visible,
   border: 1px solid #aaa;
   border-radius: 3px;
   color: var(--text-muted);
-  font: bold 38px var(--font-title);
+  font: bold 38px var(t-title);
 }
 
 .avatar img {
@@ -233,7 +233,7 @@ a:focus-visible,
   padding-bottom: 6px;
   border-bottom: 1px solid var(--border);
   color: #555;
-  font: bold 18px/1.25 var(--font-title);
+  font: bold 18px/1.25 var(t-title);
 }
 
 /* Caixa padrão: overflow hidden faz o título respeitar o canto arredondado */
@@ -264,7 +264,7 @@ a:focus-visible,
 .invite h2 {
   margin: 0 0 10px;
   color: var(--purple);
-  font: bold 22px/1.2 var(--font-title);
+  font: bold 22px/1.2 var(t-title);
 }
 
 .big-date {
@@ -292,7 +292,7 @@ a:focus-visible,
   border-radius: 4px;
   background: linear-gradient(#fff, #dcdcdc);
   color: #174f78;
-  font: bold 12px var(--font-ui);
+  font: bold 12px var(t-ui);
   cursor: pointer;
 }
 
@@ -362,8 +362,16 @@ a:focus-visible,
   height: 72px;
   overflow: hidden;
   margin: 0 auto 5px;
-  border: 1px solid #c8c8d8;
-  background: #eee;
+
+  display: grid;
+  place-items: center;
+
+  background: #d8d8e8;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+
+  color: var(--text-muted);
+  font: bold 22px var(--font-title);
 }
 
 .friend-avatar img {
