@@ -448,7 +448,23 @@ footer {
 }
 
 /* ---------- Telas pequenas ---------- */
-@media (max-width: 700px) {
+.orkut-header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 10px 12px;
+  scrollbar-width: none;
+}
+
+.orkut-header > * {
+  flex-shrink: 0;
+}
+
+.orkut-header::-webkit-scrollbar {
+  display: none;
+} {
   /* a moldura de navegador só ocupa espaço no celular */
   .browser-titlebar,
   .browser-toolbar { display: none; }
