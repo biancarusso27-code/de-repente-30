@@ -1395,20 +1395,14 @@ profile: () => `
           const name = typeof f === "string" ? f : f.name;
           const id = typeof f === "string" ? f : f.id;
 
-          const photo = friendPhotos[id] || friendPhotos[name];
-
-          return `
-            <div class="friend">
-              <div class="friend-avatar" aria-hidden="true">
-                ${
-                  photo
-                    ? `<img src="${photo}" alt="${name}">`
-                    : initial(name)
-                }
-              </div>
-              ${name}
-            </div>
-          `;
+        return `
+  <div class="friend">
+    <div class="friend-avatar" aria-hidden="true">
+      ${initial(name)}
+    </div>
+    ${name}
+  </div>
+`;
         })
         .join("")}
     </div>
