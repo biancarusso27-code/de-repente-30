@@ -456,17 +456,17 @@ const pages = {
 
           <div class="friend-grid">
             ${friends
-  .slice(0, 6)
-  .map(
-    (f) =>
-      `<div class="friend">
-        <div class="friend-avatar">
-          <img src="${f.photo}" alt="${f.name}">
-        </div>
-        ${f.name}
-      </div>`
-  )
-  .join("")}
+ .slice(0, 6)
+.map(
+  (f) =>
+    `<div class="friend">
+      <div class="friend-avatar">
+        ${initial(f.name)}
+      </div>
+      ${f.name}
+    </div>`
+)
+.join("")}
           </div>
 
           <p>
